@@ -50,7 +50,7 @@ typedef struct {
 @property (nonatomic, strong) ABShader *shader;
 @property (nonatomic, strong) NSDate *startDate;
 @property (weak) id<ABDisplayViewDelegate> delegate;
-@property (atomic, strong) NSArray *fftData;
+@property (nonatomic, strong) NSArray *fftData;
 
 - (CVReturn)getFrameForTime:(const CVTimeStamp *)outputTime;
 - (void)runShader:(NSString *)shaderSource;

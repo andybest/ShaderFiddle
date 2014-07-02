@@ -147,7 +147,7 @@ typedef struct
     glUniform2fv(resolutionUnif, 1, (const GLfloat *)&r);
 
     /* FFT */
-    if (self.fftData) {
+    if (_fftData) {
         [self fftTexture:_fftData];
         self.fftData = nil;
     }
@@ -208,6 +208,9 @@ typedef struct
 
 - (void)fftTexture:(NSArray *)fftData
 {
+    if (fftData == nil)
+        return;
+
     if (!fftTextureCreated) {
         // Create one OpenGL texture
         glGenTextures(1, &fftTextureId);
