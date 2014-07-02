@@ -90,6 +90,8 @@
 
     _errorTableView.delegate = self;
     _errorTableView.dataSource = self;
+
+    [[ABAudioManager sharedInstance] startAudio];
 }
 
 + (BOOL)autosavesInPlace

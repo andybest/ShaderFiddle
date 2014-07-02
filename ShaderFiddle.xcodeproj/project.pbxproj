@@ -203,6 +203,8 @@
 		A530E1B61964345100C4FE55 /* worker-php.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFD8196433D800C4FE55 /* worker-php.js */; };
 		A530E1B71964345100C4FE55 /* worker-xquery.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFD9196433D800C4FE55 /* worker-xquery.js */; };
 		A55CE57719617F6900B43B90 /* shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A55CE57619617F6900B43B90 /* shader.vsh */; };
+		A55CE57E196444C800B43B90 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A55CE57D196444C800B43B90 /* libc++.dylib */; };
+		A55CE581196444E600B43B90 /* ABAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A55CE580196444E600B43B90 /* ABAudioManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -527,6 +529,9 @@
 		A530DFD9196433D800C4FE55 /* worker-xquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "worker-xquery.js"; sourceTree = "<group>"; };
 		A55CE57619617F6900B43B90 /* shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vsh; sourceTree = "<group>"; };
 		A55CE57A1963112C00B43B90 /* ABEventList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABEventList.h; sourceTree = "<group>"; };
+		A55CE57D196444C800B43B90 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		A55CE57F196444E600B43B90 /* ABAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABAudioManager.h; sourceTree = "<group>"; };
+		A55CE580196444E600B43B90 /* ABAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABAudioManager.m; sourceTree = "<group>"; };
 		C57803B1A8354D619D672769 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6AD3BE613724F9F8F4CCA4D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -536,6 +541,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55CE57E196444C800B43B90 /* libc++.dylib in Frameworks */,
 				A522D2B1195C2D55004D5A4E /* Cocoa.framework in Frameworks */,
 				89586BD35D594BD0A390573F /* libPods.a in Frameworks */,
 			);
@@ -565,6 +571,7 @@
 		A522D2AF195C2D55004D5A4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A55CE57D196444C800B43B90 /* libc++.dylib */,
 				A522D2B0195C2D55004D5A4E /* Cocoa.framework */,
 				A522D2D2195C2D55004D5A4E /* XCTest.framework */,
 				A522D2B2195C2D55004D5A4E /* Other Frameworks */,
@@ -600,6 +607,8 @@
 				A522D338195DA827004D5A4E /* ABShader.h */,
 				A522D339195DA827004D5A4E /* ABShader.m */,
 				A55CE57A1963112C00B43B90 /* ABEventList.h */,
+				A55CE57F196444E600B43B90 /* ABAudioManager.h */,
+				A55CE580196444E600B43B90 /* ABAudioManager.m */,
 			);
 			path = ShaderFiddle;
 			sourceTree = "<group>";
@@ -1219,6 +1228,7 @@
 				A522D2F1195C6D10004D5A4E /* ABDisplayWindowController.m in Sources */,
 				A522D33A195DA827004D5A4E /* ABShader.m in Sources */,
 				A522D2BD195C2D55004D5A4E /* main.m in Sources */,
+				A55CE581196444E600B43B90 /* ABAudioManager.m in Sources */,
 				A522D2F5195C6E71004D5A4E /* ABDisplayView.m in Sources */,
 				A522D2C4195C2D55004D5A4E /* ABDocument.m in Sources */,
 			);

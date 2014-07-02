@@ -101,6 +101,9 @@
             GLint unif = glGetUniformLocation(
                 shaderProgram, [unifName cStringUsingEncoding:NSASCIIStringEncoding]);
             _uniforms[unifName] = @(unif);
+            if (unif < 0) {
+                NSLog(@"unable to find uniform %@", unifName);
+            }
         }
 
         glDeleteShader(vertexShader);
@@ -247,7 +250,7 @@
 - (NSString *)generateShaderHeader
 {
     NSMutableString *header =
-        [NSMutableString stringWithString:@"#version 330\n"];
+        [NSMutableString stringWithString:@"#version 150\n"];
 
     // Fragment color
     [header appendString:@"out vec4 fragColor;\n"];
@@ -257,6 +260,7 @@
     [header appendString:@"uniform vec2 iResolution;\n"];
     [header appendString:@"uniform vec4 iDate;\n"];
     [header appendString:@"uniform vec4 iMouse;\n"];
+    [header appendString:@"uniform sampler2D iFFT;\n"];
 
     return header;
 }

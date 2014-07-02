@@ -17,6 +17,7 @@
 #import <Cocoa/Cocoa.h>
 #import <ACEView.h>
 #import "ABDisplayWindowController.h"
+#import "ABAudioManager.h"
 
 #define kABTableColumnIdentifierLineNum @"lineNum"
 #define kABTableColumnIdentifierErrorType @"errorType"

@@ -42,12 +42,15 @@ typedef struct {
     float viewHeight;
 
     GLuint shaderProgram;
+    BOOL fftTextureCreated;
+    GLuint fftTextureId;
 }
 
 @property (nonatomic, strong) NSString *fragShader;
 @property (nonatomic, strong) ABShader *shader;
 @property (nonatomic, strong) NSDate *startDate;
 @property (weak) id<ABDisplayViewDelegate> delegate;
+@property (atomic, strong) NSArray *fftData;
 
 - (CVReturn)getFrameForTime:(const CVTimeStamp *)outputTime;
 - (void)runShader:(NSString *)shaderSource;

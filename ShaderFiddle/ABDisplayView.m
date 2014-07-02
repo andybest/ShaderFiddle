@@ -46,6 +46,8 @@ typedef struct
 {
     self.startDate = [NSDate date];
 
+    fftTextureCreated = NO;
+
     NSOpenGLPixelFormatAttribute attributes[] = {
         NSOpenGLPFAOpenGLProfile, NSOpenGLProfileVersion3_2Core,
         NSOpenGLPFAColorSize, 24,
@@ -57,6 +59,12 @@ typedef struct
 
     NSOpenGLPixelFormat *pf = [[NSOpenGLPixelFormat alloc] initWithAttributes:attributes];
     [self setPixelFormat:pf];
+
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    [center addObserver:self
+               selector:@selector(fftUpdated:)
+                   name:kABFFTUpdatedEvent
+                 object:nil];
 }
 
 - (void)reshape
@@ -137,6 +145,12 @@ typedef struct
     Vector2 r = {.x = (float)self.frame.size.width, .y = (float)self.frame.size.height};
     GLuint resolutionUnif = (GLuint)[_shader.uniforms[@"iResolution"] unsignedIntegerValue];
     glUniform2fv(resolutionUnif, 1, (const GLfloat *)&r);
+
+    /* FFT */
+    if (self.fftData) {
+        [self fftTexture:_fftData];
+        self.fftData = nil;
+    }
 }
 
 - (void)drawFrameForTime:(CVTimeStamp)time
@@ -166,7 +180,7 @@ typedef struct
     [self.openGLContext makeCurrentContext];
     @try {
         NSArray *attrs = @[ @"position" ];
-        NSArray *unifs = @[ @"iResolution", @"iGlobalTime", @"iMouse", @"iDate" ];
+        NSArray *unifs = @[ @"iResolution", @"iGlobalTime", @"iMouse", @"iDate", @"iFFT" ];
 
         self.shader = [[ABShader alloc] init];
         _shader.delegate = self;
@@ -185,6 +199,55 @@ typedef struct
     if (_delegate) {
         [_delegate dispatchErrors:errors];
     }
+}
+
+- (void)fftUpdated:(NSNotification *)notification
+{
+    self.fftData = notification.userInfo[@"amplitudes"];
+}
+
+- (void)fftTexture:(NSArray *)fftData
+{
+    if (!fftTextureCreated) {
+        // Create one OpenGL texture
+        glGenTextures(1, &fftTextureId);
+        NSLog(@"Texture id: %i", fftTextureId);
+        fftTextureCreated = YES;
+    }
+
+    int fftSize = 256;
+
+    if ([fftData count] != fftSize)
+        [NSException raise:@"FFT Data Exception" format:@"FFT Data size is invalid"];
+
+    unsigned char data[fftSize];
+    for (int i = 0; i < fftSize; i++) {
+        data[i] = 127; //[fftData[i] floatValue];
+    }
+
+    float texData[256 * 256][4];
+    for (int x = 0; x < 256; x++) {
+        for (int y = 0; y < 1; y++) {
+            texData[x + (y * 256)][0] = [fftData[x] floatValue];
+            texData[x + (y * 256)][1] = ((char)(x ^ y)) / 255.0;
+            texData[x + (y * 256)][2] = ((char)(x ^ y)) / 255.0;
+            texData[x + (y * 256)][3] = 255;
+        }
+    }
+
+    glActiveTexture(GL_TEXTURE0);
+    // "Bind" the newly created texture : all future texture functions will modify this texture
+    glBindTexture(GL_TEXTURE_2D, fftTextureId);
+
+    // Give the image to OpenGL
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 256, 1, 0, GL_RGBA, GL_FLOAT, texData);
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+
+    glUniform1i((GLint)[_shader.uniforms[@"iFFT"] integerValue], 0);
 }
 
 #pragma mark -

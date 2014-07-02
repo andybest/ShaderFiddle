@@ -15,3 +15,4 @@
 //
 
 #define kABShaderHasErrorsEvent @"kABShaderHasErrorsEvent"
+#define kABFFTUpdatedEvent @"kABFFTUpdatedEvent"
