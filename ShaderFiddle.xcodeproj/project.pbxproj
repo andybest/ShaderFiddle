@@ -1,0 +1,1387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89586BD35D594BD0A390573F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C57803B1A8354D619D672769 /* libPods.a */; };
+		A522D2B1195C2D55004D5A4E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A522D2B0195C2D55004D5A4E /* Cocoa.framework */; };
+		A522D2BB195C2D55004D5A4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A522D2B9195C2D55004D5A4E /* InfoPlist.strings */; };
+		A522D2BD195C2D55004D5A4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A522D2BC195C2D55004D5A4E /* main.m */; };
+		A522D2C1195C2D55004D5A4E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A522D2BF195C2D55004D5A4E /* Credits.rtf */; };
+		A522D2C4195C2D55004D5A4E /* ABDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A522D2C3195C2D55004D5A4E /* ABDocument.m */; };
+		A522D2C7195C2D55004D5A4E /* ABDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = A522D2C5195C2D55004D5A4E /* ABDocument.xib */; };
+		A522D2CA195C2D55004D5A4E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A522D2C8195C2D55004D5A4E /* MainMenu.xib */; };
+		A522D2CC195C2D55004D5A4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A522D2CB195C2D55004D5A4E /* Images.xcassets */; };
+		A522D2F1195C6D10004D5A4E /* ABDisplayWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A522D2EF195C6D10004D5A4E /* ABDisplayWindowController.m */; };
+		A522D2F2195C6D10004D5A4E /* ABDisplayWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A522D2F0195C6D10004D5A4E /* ABDisplayWindowController.xib */; };
+		A522D2F5195C6E71004D5A4E /* ABDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A522D2F4195C6E71004D5A4E /* ABDisplayView.m */; };
+		A522D33A195DA827004D5A4E /* ABShader.m in Sources */ = {isa = PBXBuildFile; fileRef = A522D339195DA827004D5A4E /* ABShader.m */; };
+		A530E1021964343400C4FE55 /* ace.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEB1196433D700C4FE55 /* ace.js */; };
+		A530E1031964345000C4FE55 /* ext-beautify.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEB2196433D700C4FE55 /* ext-beautify.js */; };
+		A530E1041964345000C4FE55 /* ext-chromevox.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEB3196433D700C4FE55 /* ext-chromevox.js */; };
+		A530E1051964345000C4FE55 /* ext-elastic_tabstops_lite.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEB4196433D700C4FE55 /* ext-elastic_tabstops_lite.js */; };
+		A530E1061964345000C4FE55 /* ext-emmet.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEB5196433D700C4FE55 /* ext-emmet.js */; };
+		A530E1071964345000C4FE55 /* ext-error_marker.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEB6196433D700C4FE55 /* ext-error_marker.js */; };
+		A530E1081964345000C4FE55 /* ext-keybinding_menu.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEB7196433D700C4FE55 /* ext-keybinding_menu.js */; };
+		A530E1091964345100C4FE55 /* ext-language_tools.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEB8196433D700C4FE55 /* ext-language_tools.js */; };
+		A530E10A1964345100C4FE55 /* ext-linking.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEB9196433D700C4FE55 /* ext-linking.js */; };
+		A530E10B1964345100C4FE55 /* ext-modelist.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEBA196433D700C4FE55 /* ext-modelist.js */; };
+		A530E10C1964345100C4FE55 /* ext-old_ie.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEBB196433D700C4FE55 /* ext-old_ie.js */; };
+		A530E10D1964345100C4FE55 /* ext-options.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEBC196433D700C4FE55 /* ext-options.js */; };
+		A530E10E1964345100C4FE55 /* ext-prompt.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEBD196433D700C4FE55 /* ext-prompt.js */; };
+		A530E10F1964345100C4FE55 /* ext-searchbox.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEBE196433D700C4FE55 /* ext-searchbox.js */; };
+		A530E1101964345100C4FE55 /* ext-settings_menu.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEBF196433D700C4FE55 /* ext-settings_menu.js */; };
+		A530E1111964345100C4FE55 /* ext-spellcheck.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEC0196433D700C4FE55 /* ext-spellcheck.js */; };
+		A530E1121964345100C4FE55 /* ext-split.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEC1196433D700C4FE55 /* ext-split.js */; };
+		A530E1131964345100C4FE55 /* ext-static_highlight.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEC2196433D700C4FE55 /* ext-static_highlight.js */; };
+		A530E1141964345100C4FE55 /* ext-statusbar.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEC3196433D700C4FE55 /* ext-statusbar.js */; };
+		A530E1151964345100C4FE55 /* ext-textarea.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEC4196433D700C4FE55 /* ext-textarea.js */; };
+		A530E1161964345100C4FE55 /* ext-themelist.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEC5196433D700C4FE55 /* ext-themelist.js */; };
+		A530E1171964345100C4FE55 /* ext-whitespace.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEC6196433D700C4FE55 /* ext-whitespace.js */; };
+		A530E1181964345100C4FE55 /* keybinding-emacs.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEC7196433D700C4FE55 /* keybinding-emacs.js */; };
+		A530E1191964345100C4FE55 /* keybinding-vim.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEC8196433D700C4FE55 /* keybinding-vim.js */; };
+		A530E11A1964345100C4FE55 /* mode-abap.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEC9196433D700C4FE55 /* mode-abap.js */; };
+		A530E11B1964345100C4FE55 /* mode-actionscript.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DECA196433D700C4FE55 /* mode-actionscript.js */; };
+		A530E11C1964345100C4FE55 /* mode-ada.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DECB196433D700C4FE55 /* mode-ada.js */; };
+		A530E11D1964345100C4FE55 /* mode-apache_conf.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DECC196433D700C4FE55 /* mode-apache_conf.js */; };
+		A530E11E1964345100C4FE55 /* mode-applescript.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DECD196433D700C4FE55 /* mode-applescript.js */; };
+		A530E11F1964345100C4FE55 /* mode-asciidoc.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DECE196433D700C4FE55 /* mode-asciidoc.js */; };
+		A530E1201964345100C4FE55 /* mode-assembly_x86.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DECF196433D700C4FE55 /* mode-assembly_x86.js */; };
+		A530E1211964345100C4FE55 /* mode-autohotkey.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DED0196433D700C4FE55 /* mode-autohotkey.js */; };
+		A530E1221964345100C4FE55 /* mode-batchfile.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DED1196433D700C4FE55 /* mode-batchfile.js */; };
+		A530E1231964345100C4FE55 /* mode-c9search.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DED2196433D700C4FE55 /* mode-c9search.js */; };
+		A530E1241964345100C4FE55 /* mode-c_cpp.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DED3196433D700C4FE55 /* mode-c_cpp.js */; };
+		A530E1251964345100C4FE55 /* mode-cirru.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DED4196433D700C4FE55 /* mode-cirru.js */; };
+		A530E1261964345100C4FE55 /* mode-clojure.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DED5196433D700C4FE55 /* mode-clojure.js */; };
+		A530E1271964345100C4FE55 /* mode-cobol.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DED6196433D700C4FE55 /* mode-cobol.js */; };
+		A530E1281964345100C4FE55 /* mode-coffee.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DED7196433D700C4FE55 /* mode-coffee.js */; };
+		A530E1291964345100C4FE55 /* mode-coldfusion.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DED8196433D700C4FE55 /* mode-coldfusion.js */; };
+		A530E12A1964345100C4FE55 /* mode-csharp.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DED9196433D700C4FE55 /* mode-csharp.js */; };
+		A530E12B1964345100C4FE55 /* mode-css.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEDA196433D700C4FE55 /* mode-css.js */; };
+		A530E12C1964345100C4FE55 /* mode-curly.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEDB196433D700C4FE55 /* mode-curly.js */; };
+		A530E12D1964345100C4FE55 /* mode-d.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEDC196433D700C4FE55 /* mode-d.js */; };
+		A530E12E1964345100C4FE55 /* mode-dart.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEDD196433D700C4FE55 /* mode-dart.js */; };
+		A530E12F1964345100C4FE55 /* mode-diff.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEDE196433D700C4FE55 /* mode-diff.js */; };
+		A530E1301964345100C4FE55 /* mode-django.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEDF196433D700C4FE55 /* mode-django.js */; };
+		A530E1311964345100C4FE55 /* mode-dockerfile.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEE0196433D700C4FE55 /* mode-dockerfile.js */; };
+		A530E1321964345100C4FE55 /* mode-dot.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEE1196433D700C4FE55 /* mode-dot.js */; };
+		A530E1331964345100C4FE55 /* mode-ejs.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEE2196433D700C4FE55 /* mode-ejs.js */; };
+		A530E1341964345100C4FE55 /* mode-erlang.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEE3196433D700C4FE55 /* mode-erlang.js */; };
+		A530E1351964345100C4FE55 /* mode-forth.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEE4196433D700C4FE55 /* mode-forth.js */; };
+		A530E1361964345100C4FE55 /* mode-ftl.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEE5196433D700C4FE55 /* mode-ftl.js */; };
+		A530E1371964345100C4FE55 /* mode-gherkin.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEE6196433D700C4FE55 /* mode-gherkin.js */; };
+		A530E1381964345100C4FE55 /* mode-glsl.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEE7196433D700C4FE55 /* mode-glsl.js */; };
+		A530E1391964345100C4FE55 /* mode-golang.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEE8196433D700C4FE55 /* mode-golang.js */; };
+		A530E13A1964345100C4FE55 /* mode-groovy.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEE9196433D700C4FE55 /* mode-groovy.js */; };
+		A530E13B1964345100C4FE55 /* mode-haml.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEEA196433D700C4FE55 /* mode-haml.js */; };
+		A530E13C1964345100C4FE55 /* mode-handlebars.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEEB196433D700C4FE55 /* mode-handlebars.js */; };
+		A530E13D1964345100C4FE55 /* mode-haskell.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEEC196433D700C4FE55 /* mode-haskell.js */; };
+		A530E13E1964345100C4FE55 /* mode-haxe.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEED196433D700C4FE55 /* mode-haxe.js */; };
+		A530E13F1964345100C4FE55 /* mode-html.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEEE196433D700C4FE55 /* mode-html.js */; };
+		A530E1401964345100C4FE55 /* mode-html_completions.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEEF196433D700C4FE55 /* mode-html_completions.js */; };
+		A530E1411964345100C4FE55 /* mode-html_ruby.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEF0196433D700C4FE55 /* mode-html_ruby.js */; };
+		A530E1421964345100C4FE55 /* mode-ini.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEF1196433D700C4FE55 /* mode-ini.js */; };
+		A530E1431964345100C4FE55 /* mode-jack.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEF2196433D700C4FE55 /* mode-jack.js */; };
+		A530E1441964345100C4FE55 /* mode-jade.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEF3196433D700C4FE55 /* mode-jade.js */; };
+		A530E1451964345100C4FE55 /* mode-java.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEF4196433D700C4FE55 /* mode-java.js */; };
+		A530E1461964345100C4FE55 /* mode-javascript.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEF5196433D700C4FE55 /* mode-javascript.js */; };
+		A530E1471964345100C4FE55 /* mode-json.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEF6196433D700C4FE55 /* mode-json.js */; };
+		A530E1481964345100C4FE55 /* mode-jsoniq.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEF7196433D700C4FE55 /* mode-jsoniq.js */; };
+		A530E1491964345100C4FE55 /* mode-jsp.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEF8196433D700C4FE55 /* mode-jsp.js */; };
+		A530E14A1964345100C4FE55 /* mode-jsx.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEF9196433D700C4FE55 /* mode-jsx.js */; };
+		A530E14B1964345100C4FE55 /* mode-julia.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEFA196433D700C4FE55 /* mode-julia.js */; };
+		A530E14C1964345100C4FE55 /* mode-latex.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEFB196433D700C4FE55 /* mode-latex.js */; };
+		A530E14D1964345100C4FE55 /* mode-less.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEFC196433D700C4FE55 /* mode-less.js */; };
+		A530E14E1964345100C4FE55 /* mode-liquid.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEFD196433D700C4FE55 /* mode-liquid.js */; };
+		A530E14F1964345100C4FE55 /* mode-lisp.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEFE196433D700C4FE55 /* mode-lisp.js */; };
+		A530E1501964345100C4FE55 /* mode-livescript.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DEFF196433D700C4FE55 /* mode-livescript.js */; };
+		A530E1511964345100C4FE55 /* mode-logiql.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF00196433D700C4FE55 /* mode-logiql.js */; };
+		A530E1521964345100C4FE55 /* mode-lsl.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF01196433D700C4FE55 /* mode-lsl.js */; };
+		A530E1531964345100C4FE55 /* mode-lua.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF02196433D700C4FE55 /* mode-lua.js */; };
+		A530E1541964345100C4FE55 /* mode-luapage.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF03196433D700C4FE55 /* mode-luapage.js */; };
+		A530E1551964345100C4FE55 /* mode-lucene.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF04196433D700C4FE55 /* mode-lucene.js */; };
+		A530E1561964345100C4FE55 /* mode-makefile.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF05196433D700C4FE55 /* mode-makefile.js */; };
+		A530E1571964345100C4FE55 /* mode-markdown.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF06196433D700C4FE55 /* mode-markdown.js */; };
+		A530E1581964345100C4FE55 /* mode-matlab.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF07196433D700C4FE55 /* mode-matlab.js */; };
+		A530E1591964345100C4FE55 /* mode-mel.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF08196433D700C4FE55 /* mode-mel.js */; };
+		A530E15A1964345100C4FE55 /* mode-mushcode.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF09196433D700C4FE55 /* mode-mushcode.js */; };
+		A530E15B1964345100C4FE55 /* mode-mushcode_high_rules.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF0A196433D700C4FE55 /* mode-mushcode_high_rules.js */; };
+		A530E15C1964345100C4FE55 /* mode-mysql.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF0B196433D700C4FE55 /* mode-mysql.js */; };
+		A530E15D1964345100C4FE55 /* mode-nix.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF0C196433D700C4FE55 /* mode-nix.js */; };
+		A530E15E1964345100C4FE55 /* mode-objectivec.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF0D196433D700C4FE55 /* mode-objectivec.js */; };
+		A530E15F1964345100C4FE55 /* mode-ocaml.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF0E196433D700C4FE55 /* mode-ocaml.js */; };
+		A530E1601964345100C4FE55 /* mode-pascal.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF0F196433D700C4FE55 /* mode-pascal.js */; };
+		A530E1611964345100C4FE55 /* mode-perl.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF10196433D700C4FE55 /* mode-perl.js */; };
+		A530E1621964345100C4FE55 /* mode-pgsql.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF11196433D700C4FE55 /* mode-pgsql.js */; };
+		A530E1631964345100C4FE55 /* mode-php.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF12196433D700C4FE55 /* mode-php.js */; };
+		A530E1641964345100C4FE55 /* mode-plain_text.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF13196433D700C4FE55 /* mode-plain_text.js */; };
+		A530E1651964345100C4FE55 /* mode-powershell.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF14196433D700C4FE55 /* mode-powershell.js */; };
+		A530E1661964345100C4FE55 /* mode-prolog.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF15196433D700C4FE55 /* mode-prolog.js */; };
+		A530E1671964345100C4FE55 /* mode-properties.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF16196433D700C4FE55 /* mode-properties.js */; };
+		A530E1681964345100C4FE55 /* mode-protobuf.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF17196433D700C4FE55 /* mode-protobuf.js */; };
+		A530E1691964345100C4FE55 /* mode-python.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF18196433D700C4FE55 /* mode-python.js */; };
+		A530E16A1964345100C4FE55 /* mode-r.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF19196433D700C4FE55 /* mode-r.js */; };
+		A530E16B1964345100C4FE55 /* mode-rdoc.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF1A196433D700C4FE55 /* mode-rdoc.js */; };
+		A530E16C1964345100C4FE55 /* mode-rhtml.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF1B196433D700C4FE55 /* mode-rhtml.js */; };
+		A530E16D1964345100C4FE55 /* mode-ruby.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF1C196433D700C4FE55 /* mode-ruby.js */; };
+		A530E16E1964345100C4FE55 /* mode-rust.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF1D196433D700C4FE55 /* mode-rust.js */; };
+		A530E16F1964345100C4FE55 /* mode-sass.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF1E196433D700C4FE55 /* mode-sass.js */; };
+		A530E1701964345100C4FE55 /* mode-scad.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF1F196433D700C4FE55 /* mode-scad.js */; };
+		A530E1711964345100C4FE55 /* mode-scala.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF20196433D700C4FE55 /* mode-scala.js */; };
+		A530E1721964345100C4FE55 /* mode-scheme.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF21196433D700C4FE55 /* mode-scheme.js */; };
+		A530E1731964345100C4FE55 /* mode-scss.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF22196433D700C4FE55 /* mode-scss.js */; };
+		A530E1741964345100C4FE55 /* mode-sh.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF23196433D700C4FE55 /* mode-sh.js */; };
+		A530E1751964345100C4FE55 /* mode-sjs.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF24196433D700C4FE55 /* mode-sjs.js */; };
+		A530E1761964345100C4FE55 /* mode-smarty.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF25196433D700C4FE55 /* mode-smarty.js */; };
+		A530E1771964345100C4FE55 /* mode-snippets.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF26196433D700C4FE55 /* mode-snippets.js */; };
+		A530E1781964345100C4FE55 /* mode-soy_template.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF27196433D700C4FE55 /* mode-soy_template.js */; };
+		A530E1791964345100C4FE55 /* mode-space.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF28196433D700C4FE55 /* mode-space.js */; };
+		A530E17A1964345100C4FE55 /* mode-sql.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF29196433D700C4FE55 /* mode-sql.js */; };
+		A530E17B1964345100C4FE55 /* mode-stylus.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF2A196433D700C4FE55 /* mode-stylus.js */; };
+		A530E17C1964345100C4FE55 /* mode-svg.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF2B196433D700C4FE55 /* mode-svg.js */; };
+		A530E17D1964345100C4FE55 /* mode-tcl.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF2C196433D700C4FE55 /* mode-tcl.js */; };
+		A530E17E1964345100C4FE55 /* mode-tex.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF2D196433D700C4FE55 /* mode-tex.js */; };
+		A530E17F1964345100C4FE55 /* mode-text.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF2E196433D700C4FE55 /* mode-text.js */; };
+		A530E1801964345100C4FE55 /* mode-textile.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF2F196433D700C4FE55 /* mode-textile.js */; };
+		A530E1811964345100C4FE55 /* mode-tmsnippet.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF30196433D700C4FE55 /* mode-tmsnippet.js */; };
+		A530E1821964345100C4FE55 /* mode-toml.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF31196433D700C4FE55 /* mode-toml.js */; };
+		A530E1831964345100C4FE55 /* mode-twig.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF32196433D700C4FE55 /* mode-twig.js */; };
+		A530E1841964345100C4FE55 /* mode-typescript.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF33196433D700C4FE55 /* mode-typescript.js */; };
+		A530E1851964345100C4FE55 /* mode-vala.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF34196433D700C4FE55 /* mode-vala.js */; };
+		A530E1861964345100C4FE55 /* mode-vbscript.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF35196433D700C4FE55 /* mode-vbscript.js */; };
+		A530E1871964345100C4FE55 /* mode-velocity.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF36196433D700C4FE55 /* mode-velocity.js */; };
+		A530E1881964345100C4FE55 /* mode-verilog.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF37196433D700C4FE55 /* mode-verilog.js */; };
+		A530E1891964345100C4FE55 /* mode-vhdl.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF38196433D700C4FE55 /* mode-vhdl.js */; };
+		A530E18A1964345100C4FE55 /* mode-xml.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF39196433D700C4FE55 /* mode-xml.js */; };
+		A530E18B1964345100C4FE55 /* mode-xquery.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF3A196433D700C4FE55 /* mode-xquery.js */; };
+		A530E18C1964345100C4FE55 /* mode-yaml.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DF3B196433D700C4FE55 /* mode-yaml.js */; };
+		A530E18D1964345100C4FE55 /* theme-ambiance.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFAF196433D700C4FE55 /* theme-ambiance.js */; };
+		A530E18E1964345100C4FE55 /* theme-chaos.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFB0196433D700C4FE55 /* theme-chaos.js */; };
+		A530E18F1964345100C4FE55 /* theme-chrome.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFB1196433D700C4FE55 /* theme-chrome.js */; };
+		A530E1901964345100C4FE55 /* theme-cloud9_day.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFB2196433D700C4FE55 /* theme-cloud9_day.js */; };
+		A530E1911964345100C4FE55 /* theme-cloud9_night.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFB3196433D700C4FE55 /* theme-cloud9_night.js */; };
+		A530E1921964345100C4FE55 /* theme-cloud9_night_low_color.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFB4196433D700C4FE55 /* theme-cloud9_night_low_color.js */; };
+		A530E1931964345100C4FE55 /* theme-clouds.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFB5196433D700C4FE55 /* theme-clouds.js */; };
+		A530E1941964345100C4FE55 /* theme-clouds_midnight.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFB6196433D700C4FE55 /* theme-clouds_midnight.js */; };
+		A530E1951964345100C4FE55 /* theme-cobalt.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFB7196433D700C4FE55 /* theme-cobalt.js */; };
+		A530E1961964345100C4FE55 /* theme-crimson_editor.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFB8196433D700C4FE55 /* theme-crimson_editor.js */; };
+		A530E1971964345100C4FE55 /* theme-dawn.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFB9196433D700C4FE55 /* theme-dawn.js */; };
+		A530E1981964345100C4FE55 /* theme-dreamweaver.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFBA196433D700C4FE55 /* theme-dreamweaver.js */; };
+		A530E1991964345100C4FE55 /* theme-eclipse.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFBB196433D700C4FE55 /* theme-eclipse.js */; };
+		A530E19A1964345100C4FE55 /* theme-github.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFBC196433D700C4FE55 /* theme-github.js */; };
+		A530E19B1964345100C4FE55 /* theme-idle_fingers.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFBD196433D700C4FE55 /* theme-idle_fingers.js */; };
+		A530E19C1964345100C4FE55 /* theme-katzenmilch.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFBE196433D800C4FE55 /* theme-katzenmilch.js */; };
+		A530E19D1964345100C4FE55 /* theme-kr.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFBF196433D800C4FE55 /* theme-kr.js */; };
+		A530E19E1964345100C4FE55 /* theme-kuroir.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFC0196433D800C4FE55 /* theme-kuroir.js */; };
+		A530E19F1964345100C4FE55 /* theme-merbivore.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFC1196433D800C4FE55 /* theme-merbivore.js */; };
+		A530E1A01964345100C4FE55 /* theme-merbivore_soft.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFC2196433D800C4FE55 /* theme-merbivore_soft.js */; };
+		A530E1A11964345100C4FE55 /* theme-mono_industrial.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFC3196433D800C4FE55 /* theme-mono_industrial.js */; };
+		A530E1A21964345100C4FE55 /* theme-monokai.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFC4196433D800C4FE55 /* theme-monokai.js */; };
+		A530E1A31964345100C4FE55 /* theme-pastel_on_dark.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFC5196433D800C4FE55 /* theme-pastel_on_dark.js */; };
+		A530E1A41964345100C4FE55 /* theme-solarized_dark.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFC6196433D800C4FE55 /* theme-solarized_dark.js */; };
+		A530E1A51964345100C4FE55 /* theme-solarized_light.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFC7196433D800C4FE55 /* theme-solarized_light.js */; };
+		A530E1A61964345100C4FE55 /* theme-terminal.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFC8196433D800C4FE55 /* theme-terminal.js */; };
+		A530E1A71964345100C4FE55 /* theme-textmate.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFC9196433D800C4FE55 /* theme-textmate.js */; };
+		A530E1A81964345100C4FE55 /* theme-tomorrow.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFCA196433D800C4FE55 /* theme-tomorrow.js */; };
+		A530E1A91964345100C4FE55 /* theme-tomorrow_night.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFCB196433D800C4FE55 /* theme-tomorrow_night.js */; };
+		A530E1AA1964345100C4FE55 /* theme-tomorrow_night_blue.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFCC196433D800C4FE55 /* theme-tomorrow_night_blue.js */; };
+		A530E1AB1964345100C4FE55 /* theme-tomorrow_night_bright.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFCD196433D800C4FE55 /* theme-tomorrow_night_bright.js */; };
+		A530E1AC1964345100C4FE55 /* theme-tomorrow_night_eighties.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFCE196433D800C4FE55 /* theme-tomorrow_night_eighties.js */; };
+		A530E1AD1964345100C4FE55 /* theme-twilight.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFCF196433D800C4FE55 /* theme-twilight.js */; };
+		A530E1AE1964345100C4FE55 /* theme-vibrant_ink.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFD0196433D800C4FE55 /* theme-vibrant_ink.js */; };
+		A530E1AF1964345100C4FE55 /* theme-xcode.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFD1196433D800C4FE55 /* theme-xcode.js */; };
+		A530E1B01964345100C4FE55 /* worker-coffee.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFD2196433D800C4FE55 /* worker-coffee.js */; };
+		A530E1B11964345100C4FE55 /* worker-css.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFD3196433D800C4FE55 /* worker-css.js */; };
+		A530E1B21964345100C4FE55 /* worker-html.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFD4196433D800C4FE55 /* worker-html.js */; };
+		A530E1B31964345100C4FE55 /* worker-javascript.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFD5196433D800C4FE55 /* worker-javascript.js */; };
+		A530E1B41964345100C4FE55 /* worker-json.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFD6196433D800C4FE55 /* worker-json.js */; };
+		A530E1B51964345100C4FE55 /* worker-lua.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFD7196433D800C4FE55 /* worker-lua.js */; };
+		A530E1B61964345100C4FE55 /* worker-php.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFD8196433D800C4FE55 /* worker-php.js */; };
+		A530E1B71964345100C4FE55 /* worker-xquery.js in Resources */ = {isa = PBXBuildFile; fileRef = A530DFD9196433D800C4FE55 /* worker-xquery.js */; };
+		A55CE57719617F6900B43B90 /* shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A55CE57619617F6900B43B90 /* shader.vsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A522D2AD195C2D55004D5A4E /* ShaderFiddle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShaderFiddle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A522D2B0195C2D55004D5A4E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A522D2B3195C2D55004D5A4E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A522D2B4195C2D55004D5A4E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A522D2B5195C2D55004D5A4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A522D2B8195C2D55004D5A4E /* ShaderFiddle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShaderFiddle-Info.plist"; sourceTree = "<group>"; };
+		A522D2BA195C2D55004D5A4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A522D2BC195C2D55004D5A4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A522D2BE195C2D55004D5A4E /* ShaderFiddle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShaderFiddle-Prefix.pch"; sourceTree = "<group>"; };
+		A522D2C0195C2D55004D5A4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A522D2C2195C2D55004D5A4E /* ABDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABDocument.h; sourceTree = "<group>"; };
+		A522D2C3195C2D55004D5A4E /* ABDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABDocument.m; sourceTree = "<group>"; };
+		A522D2C6195C2D55004D5A4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ABDocument.xib; sourceTree = "<group>"; };
+		A522D2C9195C2D55004D5A4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A522D2CB195C2D55004D5A4E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A522D2D2195C2D55004D5A4E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A522D2EE195C6D10004D5A4E /* ABDisplayWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABDisplayWindowController.h; sourceTree = "<group>"; };
+		A522D2EF195C6D10004D5A4E /* ABDisplayWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABDisplayWindowController.m; sourceTree = "<group>"; };
+		A522D2F0195C6D10004D5A4E /* ABDisplayWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ABDisplayWindowController.xib; sourceTree = "<group>"; };
+		A522D2F3195C6E71004D5A4E /* ABDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABDisplayView.h; sourceTree = "<group>"; };
+		A522D2F4195C6E71004D5A4E /* ABDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABDisplayView.m; sourceTree = "<group>"; };
+		A522D338195DA827004D5A4E /* ABShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABShader.h; sourceTree = "<group>"; };
+		A522D339195DA827004D5A4E /* ABShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABShader.m; sourceTree = "<group>"; };
+		A530DEB1196433D700C4FE55 /* ace.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ace.js; sourceTree = "<group>"; };
+		A530DEB2196433D700C4FE55 /* ext-beautify.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-beautify.js"; sourceTree = "<group>"; };
+		A530DEB3196433D700C4FE55 /* ext-chromevox.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-chromevox.js"; sourceTree = "<group>"; };
+		A530DEB4196433D700C4FE55 /* ext-elastic_tabstops_lite.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-elastic_tabstops_lite.js"; sourceTree = "<group>"; };
+		A530DEB5196433D700C4FE55 /* ext-emmet.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-emmet.js"; sourceTree = "<group>"; };
+		A530DEB6196433D700C4FE55 /* ext-error_marker.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-error_marker.js"; sourceTree = "<group>"; };
+		A530DEB7196433D700C4FE55 /* ext-keybinding_menu.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-keybinding_menu.js"; sourceTree = "<group>"; };
+		A530DEB8196433D700C4FE55 /* ext-language_tools.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-language_tools.js"; sourceTree = "<group>"; };
+		A530DEB9196433D700C4FE55 /* ext-linking.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-linking.js"; sourceTree = "<group>"; };
+		A530DEBA196433D700C4FE55 /* ext-modelist.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-modelist.js"; sourceTree = "<group>"; };
+		A530DEBB196433D700C4FE55 /* ext-old_ie.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-old_ie.js"; sourceTree = "<group>"; };
+		A530DEBC196433D700C4FE55 /* ext-options.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-options.js"; sourceTree = "<group>"; };
+		A530DEBD196433D700C4FE55 /* ext-prompt.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-prompt.js"; sourceTree = "<group>"; };
+		A530DEBE196433D700C4FE55 /* ext-searchbox.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-searchbox.js"; sourceTree = "<group>"; };
+		A530DEBF196433D700C4FE55 /* ext-settings_menu.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-settings_menu.js"; sourceTree = "<group>"; };
+		A530DEC0196433D700C4FE55 /* ext-spellcheck.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-spellcheck.js"; sourceTree = "<group>"; };
+		A530DEC1196433D700C4FE55 /* ext-split.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-split.js"; sourceTree = "<group>"; };
+		A530DEC2196433D700C4FE55 /* ext-static_highlight.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-static_highlight.js"; sourceTree = "<group>"; };
+		A530DEC3196433D700C4FE55 /* ext-statusbar.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-statusbar.js"; sourceTree = "<group>"; };
+		A530DEC4196433D700C4FE55 /* ext-textarea.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-textarea.js"; sourceTree = "<group>"; };
+		A530DEC5196433D700C4FE55 /* ext-themelist.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-themelist.js"; sourceTree = "<group>"; };
+		A530DEC6196433D700C4FE55 /* ext-whitespace.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "ext-whitespace.js"; sourceTree = "<group>"; };
+		A530DEC7196433D700C4FE55 /* keybinding-emacs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "keybinding-emacs.js"; sourceTree = "<group>"; };
+		A530DEC8196433D700C4FE55 /* keybinding-vim.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "keybinding-vim.js"; sourceTree = "<group>"; };
+		A530DEC9196433D700C4FE55 /* mode-abap.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-abap.js"; sourceTree = "<group>"; };
+		A530DECA196433D700C4FE55 /* mode-actionscript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-actionscript.js"; sourceTree = "<group>"; };
+		A530DECB196433D700C4FE55 /* mode-ada.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-ada.js"; sourceTree = "<group>"; };
+		A530DECC196433D700C4FE55 /* mode-apache_conf.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-apache_conf.js"; sourceTree = "<group>"; };
+		A530DECD196433D700C4FE55 /* mode-applescript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-applescript.js"; sourceTree = "<group>"; };
+		A530DECE196433D700C4FE55 /* mode-asciidoc.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-asciidoc.js"; sourceTree = "<group>"; };
+		A530DECF196433D700C4FE55 /* mode-assembly_x86.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-assembly_x86.js"; sourceTree = "<group>"; };
+		A530DED0196433D700C4FE55 /* mode-autohotkey.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-autohotkey.js"; sourceTree = "<group>"; };
+		A530DED1196433D700C4FE55 /* mode-batchfile.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-batchfile.js"; sourceTree = "<group>"; };
+		A530DED2196433D700C4FE55 /* mode-c9search.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-c9search.js"; sourceTree = "<group>"; };
+		A530DED3196433D700C4FE55 /* mode-c_cpp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-c_cpp.js"; sourceTree = "<group>"; };
+		A530DED4196433D700C4FE55 /* mode-cirru.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-cirru.js"; sourceTree = "<group>"; };
+		A530DED5196433D700C4FE55 /* mode-clojure.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-clojure.js"; sourceTree = "<group>"; };
+		A530DED6196433D700C4FE55 /* mode-cobol.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-cobol.js"; sourceTree = "<group>"; };
+		A530DED7196433D700C4FE55 /* mode-coffee.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-coffee.js"; sourceTree = "<group>"; };
+		A530DED8196433D700C4FE55 /* mode-coldfusion.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-coldfusion.js"; sourceTree = "<group>"; };
+		A530DED9196433D700C4FE55 /* mode-csharp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-csharp.js"; sourceTree = "<group>"; };
+		A530DEDA196433D700C4FE55 /* mode-css.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-css.js"; sourceTree = "<group>"; };
+		A530DEDB196433D700C4FE55 /* mode-curly.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-curly.js"; sourceTree = "<group>"; };
+		A530DEDC196433D700C4FE55 /* mode-d.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-d.js"; sourceTree = "<group>"; };
+		A530DEDD196433D700C4FE55 /* mode-dart.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-dart.js"; sourceTree = "<group>"; };
+		A530DEDE196433D700C4FE55 /* mode-diff.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-diff.js"; sourceTree = "<group>"; };
+		A530DEDF196433D700C4FE55 /* mode-django.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-django.js"; sourceTree = "<group>"; };
+		A530DEE0196433D700C4FE55 /* mode-dockerfile.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-dockerfile.js"; sourceTree = "<group>"; };
+		A530DEE1196433D700C4FE55 /* mode-dot.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-dot.js"; sourceTree = "<group>"; };
+		A530DEE2196433D700C4FE55 /* mode-ejs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-ejs.js"; sourceTree = "<group>"; };
+		A530DEE3196433D700C4FE55 /* mode-erlang.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-erlang.js"; sourceTree = "<group>"; };
+		A530DEE4196433D700C4FE55 /* mode-forth.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-forth.js"; sourceTree = "<group>"; };
+		A530DEE5196433D700C4FE55 /* mode-ftl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-ftl.js"; sourceTree = "<group>"; };
+		A530DEE6196433D700C4FE55 /* mode-gherkin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-gherkin.js"; sourceTree = "<group>"; };
+		A530DEE7196433D700C4FE55 /* mode-glsl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-glsl.js"; sourceTree = "<group>"; };
+		A530DEE8196433D700C4FE55 /* mode-golang.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-golang.js"; sourceTree = "<group>"; };
+		A530DEE9196433D700C4FE55 /* mode-groovy.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-groovy.js"; sourceTree = "<group>"; };
+		A530DEEA196433D700C4FE55 /* mode-haml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-haml.js"; sourceTree = "<group>"; };
+		A530DEEB196433D700C4FE55 /* mode-handlebars.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-handlebars.js"; sourceTree = "<group>"; };
+		A530DEEC196433D700C4FE55 /* mode-haskell.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-haskell.js"; sourceTree = "<group>"; };
+		A530DEED196433D700C4FE55 /* mode-haxe.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-haxe.js"; sourceTree = "<group>"; };
+		A530DEEE196433D700C4FE55 /* mode-html.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-html.js"; sourceTree = "<group>"; };
+		A530DEEF196433D700C4FE55 /* mode-html_completions.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-html_completions.js"; sourceTree = "<group>"; };
+		A530DEF0196433D700C4FE55 /* mode-html_ruby.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-html_ruby.js"; sourceTree = "<group>"; };
+		A530DEF1196433D700C4FE55 /* mode-ini.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-ini.js"; sourceTree = "<group>"; };
+		A530DEF2196433D700C4FE55 /* mode-jack.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-jack.js"; sourceTree = "<group>"; };
+		A530DEF3196433D700C4FE55 /* mode-jade.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-jade.js"; sourceTree = "<group>"; };
+		A530DEF4196433D700C4FE55 /* mode-java.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-java.js"; sourceTree = "<group>"; };
+		A530DEF5196433D700C4FE55 /* mode-javascript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-javascript.js"; sourceTree = "<group>"; };
+		A530DEF6196433D700C4FE55 /* mode-json.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-json.js"; sourceTree = "<group>"; };
+		A530DEF7196433D700C4FE55 /* mode-jsoniq.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-jsoniq.js"; sourceTree = "<group>"; };
+		A530DEF8196433D700C4FE55 /* mode-jsp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-jsp.js"; sourceTree = "<group>"; };
+		A530DEF9196433D700C4FE55 /* mode-jsx.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-jsx.js"; sourceTree = "<group>"; };
+		A530DEFA196433D700C4FE55 /* mode-julia.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-julia.js"; sourceTree = "<group>"; };
+		A530DEFB196433D700C4FE55 /* mode-latex.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-latex.js"; sourceTree = "<group>"; };
+		A530DEFC196433D700C4FE55 /* mode-less.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-less.js"; sourceTree = "<group>"; };
+		A530DEFD196433D700C4FE55 /* mode-liquid.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-liquid.js"; sourceTree = "<group>"; };
+		A530DEFE196433D700C4FE55 /* mode-lisp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-lisp.js"; sourceTree = "<group>"; };
+		A530DEFF196433D700C4FE55 /* mode-livescript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-livescript.js"; sourceTree = "<group>"; };
+		A530DF00196433D700C4FE55 /* mode-logiql.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-logiql.js"; sourceTree = "<group>"; };
+		A530DF01196433D700C4FE55 /* mode-lsl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-lsl.js"; sourceTree = "<group>"; };
+		A530DF02196433D700C4FE55 /* mode-lua.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-lua.js"; sourceTree = "<group>"; };
+		A530DF03196433D700C4FE55 /* mode-luapage.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-luapage.js"; sourceTree = "<group>"; };
+		A530DF04196433D700C4FE55 /* mode-lucene.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-lucene.js"; sourceTree = "<group>"; };
+		A530DF05196433D700C4FE55 /* mode-makefile.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-makefile.js"; sourceTree = "<group>"; };
+		A530DF06196433D700C4FE55 /* mode-markdown.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-markdown.js"; sourceTree = "<group>"; };
+		A530DF07196433D700C4FE55 /* mode-matlab.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-matlab.js"; sourceTree = "<group>"; };
+		A530DF08196433D700C4FE55 /* mode-mel.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-mel.js"; sourceTree = "<group>"; };
+		A530DF09196433D700C4FE55 /* mode-mushcode.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-mushcode.js"; sourceTree = "<group>"; };
+		A530DF0A196433D700C4FE55 /* mode-mushcode_high_rules.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-mushcode_high_rules.js"; sourceTree = "<group>"; };
+		A530DF0B196433D700C4FE55 /* mode-mysql.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-mysql.js"; sourceTree = "<group>"; };
+		A530DF0C196433D700C4FE55 /* mode-nix.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-nix.js"; sourceTree = "<group>"; };
+		A530DF0D196433D700C4FE55 /* mode-objectivec.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-objectivec.js"; sourceTree = "<group>"; };
+		A530DF0E196433D700C4FE55 /* mode-ocaml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-ocaml.js"; sourceTree = "<group>"; };
+		A530DF0F196433D700C4FE55 /* mode-pascal.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-pascal.js"; sourceTree = "<group>"; };
+		A530DF10196433D700C4FE55 /* mode-perl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-perl.js"; sourceTree = "<group>"; };
+		A530DF11196433D700C4FE55 /* mode-pgsql.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-pgsql.js"; sourceTree = "<group>"; };
+		A530DF12196433D700C4FE55 /* mode-php.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-php.js"; sourceTree = "<group>"; };
+		A530DF13196433D700C4FE55 /* mode-plain_text.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-plain_text.js"; sourceTree = "<group>"; };
+		A530DF14196433D700C4FE55 /* mode-powershell.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-powershell.js"; sourceTree = "<group>"; };
+		A530DF15196433D700C4FE55 /* mode-prolog.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-prolog.js"; sourceTree = "<group>"; };
+		A530DF16196433D700C4FE55 /* mode-properties.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-properties.js"; sourceTree = "<group>"; };
+		A530DF17196433D700C4FE55 /* mode-protobuf.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-protobuf.js"; sourceTree = "<group>"; };
+		A530DF18196433D700C4FE55 /* mode-python.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-python.js"; sourceTree = "<group>"; };
+		A530DF19196433D700C4FE55 /* mode-r.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-r.js"; sourceTree = "<group>"; };
+		A530DF1A196433D700C4FE55 /* mode-rdoc.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-rdoc.js"; sourceTree = "<group>"; };
+		A530DF1B196433D700C4FE55 /* mode-rhtml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-rhtml.js"; sourceTree = "<group>"; };
+		A530DF1C196433D700C4FE55 /* mode-ruby.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-ruby.js"; sourceTree = "<group>"; };
+		A530DF1D196433D700C4FE55 /* mode-rust.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-rust.js"; sourceTree = "<group>"; };
+		A530DF1E196433D700C4FE55 /* mode-sass.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-sass.js"; sourceTree = "<group>"; };
+		A530DF1F196433D700C4FE55 /* mode-scad.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-scad.js"; sourceTree = "<group>"; };
+		A530DF20196433D700C4FE55 /* mode-scala.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-scala.js"; sourceTree = "<group>"; };
+		A530DF21196433D700C4FE55 /* mode-scheme.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-scheme.js"; sourceTree = "<group>"; };
+		A530DF22196433D700C4FE55 /* mode-scss.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-scss.js"; sourceTree = "<group>"; };
+		A530DF23196433D700C4FE55 /* mode-sh.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-sh.js"; sourceTree = "<group>"; };
+		A530DF24196433D700C4FE55 /* mode-sjs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-sjs.js"; sourceTree = "<group>"; };
+		A530DF25196433D700C4FE55 /* mode-smarty.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-smarty.js"; sourceTree = "<group>"; };
+		A530DF26196433D700C4FE55 /* mode-snippets.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-snippets.js"; sourceTree = "<group>"; };
+		A530DF27196433D700C4FE55 /* mode-soy_template.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-soy_template.js"; sourceTree = "<group>"; };
+		A530DF28196433D700C4FE55 /* mode-space.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-space.js"; sourceTree = "<group>"; };
+		A530DF29196433D700C4FE55 /* mode-sql.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-sql.js"; sourceTree = "<group>"; };
+		A530DF2A196433D700C4FE55 /* mode-stylus.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-stylus.js"; sourceTree = "<group>"; };
+		A530DF2B196433D700C4FE55 /* mode-svg.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-svg.js"; sourceTree = "<group>"; };
+		A530DF2C196433D700C4FE55 /* mode-tcl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-tcl.js"; sourceTree = "<group>"; };
+		A530DF2D196433D700C4FE55 /* mode-tex.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-tex.js"; sourceTree = "<group>"; };
+		A530DF2E196433D700C4FE55 /* mode-text.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-text.js"; sourceTree = "<group>"; };
+		A530DF2F196433D700C4FE55 /* mode-textile.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-textile.js"; sourceTree = "<group>"; };
+		A530DF30196433D700C4FE55 /* mode-tmsnippet.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-tmsnippet.js"; sourceTree = "<group>"; };
+		A530DF31196433D700C4FE55 /* mode-toml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-toml.js"; sourceTree = "<group>"; };
+		A530DF32196433D700C4FE55 /* mode-twig.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-twig.js"; sourceTree = "<group>"; };
+		A530DF33196433D700C4FE55 /* mode-typescript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-typescript.js"; sourceTree = "<group>"; };
+		A530DF34196433D700C4FE55 /* mode-vala.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-vala.js"; sourceTree = "<group>"; };
+		A530DF35196433D700C4FE55 /* mode-vbscript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-vbscript.js"; sourceTree = "<group>"; };
+		A530DF36196433D700C4FE55 /* mode-velocity.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-velocity.js"; sourceTree = "<group>"; };
+		A530DF37196433D700C4FE55 /* mode-verilog.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-verilog.js"; sourceTree = "<group>"; };
+		A530DF38196433D700C4FE55 /* mode-vhdl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-vhdl.js"; sourceTree = "<group>"; };
+		A530DF39196433D700C4FE55 /* mode-xml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-xml.js"; sourceTree = "<group>"; };
+		A530DF3A196433D700C4FE55 /* mode-xquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-xquery.js"; sourceTree = "<group>"; };
+		A530DF3B196433D700C4FE55 /* mode-yaml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-yaml.js"; sourceTree = "<group>"; };
+		A530DF3D196433D700C4FE55 /* abap.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = abap.js; sourceTree = "<group>"; };
+		A530DF3E196433D700C4FE55 /* actionscript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = actionscript.js; sourceTree = "<group>"; };
+		A530DF3F196433D700C4FE55 /* ada.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ada.js; sourceTree = "<group>"; };
+		A530DF40196433D700C4FE55 /* apache_conf.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = apache_conf.js; sourceTree = "<group>"; };
+		A530DF41196433D700C4FE55 /* applescript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = applescript.js; sourceTree = "<group>"; };
+		A530DF42196433D700C4FE55 /* asciidoc.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = asciidoc.js; sourceTree = "<group>"; };
+		A530DF43196433D700C4FE55 /* assembly_x86.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = assembly_x86.js; sourceTree = "<group>"; };
+		A530DF44196433D700C4FE55 /* autohotkey.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = autohotkey.js; sourceTree = "<group>"; };
+		A530DF45196433D700C4FE55 /* batchfile.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = batchfile.js; sourceTree = "<group>"; };
+		A530DF46196433D700C4FE55 /* c9search.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = c9search.js; sourceTree = "<group>"; };
+		A530DF47196433D700C4FE55 /* c_cpp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = c_cpp.js; sourceTree = "<group>"; };
+		A530DF48196433D700C4FE55 /* cirru.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = cirru.js; sourceTree = "<group>"; };
+		A530DF49196433D700C4FE55 /* clojure.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = clojure.js; sourceTree = "<group>"; };
+		A530DF4A196433D700C4FE55 /* cobol.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = cobol.js; sourceTree = "<group>"; };
+		A530DF4B196433D700C4FE55 /* coffee.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = coffee.js; sourceTree = "<group>"; };
+		A530DF4C196433D700C4FE55 /* coldfusion.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = coldfusion.js; sourceTree = "<group>"; };
+		A530DF4D196433D700C4FE55 /* csharp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = csharp.js; sourceTree = "<group>"; };
+		A530DF4E196433D700C4FE55 /* css.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = css.js; sourceTree = "<group>"; };
+		A530DF4F196433D700C4FE55 /* curly.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = curly.js; sourceTree = "<group>"; };
+		A530DF50196433D700C4FE55 /* d.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = d.js; sourceTree = "<group>"; };
+		A530DF51196433D700C4FE55 /* dart.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = dart.js; sourceTree = "<group>"; };
+		A530DF52196433D700C4FE55 /* diff.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = diff.js; sourceTree = "<group>"; };
+		A530DF53196433D700C4FE55 /* django.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = django.js; sourceTree = "<group>"; };
+		A530DF54196433D700C4FE55 /* dockerfile.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = dockerfile.js; sourceTree = "<group>"; };
+		A530DF55196433D700C4FE55 /* dot.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = dot.js; sourceTree = "<group>"; };
+		A530DF56196433D700C4FE55 /* ejs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ejs.js; sourceTree = "<group>"; };
+		A530DF57196433D700C4FE55 /* erlang.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = erlang.js; sourceTree = "<group>"; };
+		A530DF58196433D700C4FE55 /* forth.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = forth.js; sourceTree = "<group>"; };
+		A530DF59196433D700C4FE55 /* ftl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ftl.js; sourceTree = "<group>"; };
+		A530DF5A196433D700C4FE55 /* gherkin.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = gherkin.js; sourceTree = "<group>"; };
+		A530DF5B196433D700C4FE55 /* glsl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = glsl.js; sourceTree = "<group>"; };
+		A530DF5C196433D700C4FE55 /* golang.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = golang.js; sourceTree = "<group>"; };
+		A530DF5D196433D700C4FE55 /* groovy.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = groovy.js; sourceTree = "<group>"; };
+		A530DF5E196433D700C4FE55 /* haml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = haml.js; sourceTree = "<group>"; };
+		A530DF5F196433D700C4FE55 /* handlebars.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = handlebars.js; sourceTree = "<group>"; };
+		A530DF60196433D700C4FE55 /* haskell.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = haskell.js; sourceTree = "<group>"; };
+		A530DF61196433D700C4FE55 /* haxe.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = haxe.js; sourceTree = "<group>"; };
+		A530DF62196433D700C4FE55 /* html.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = html.js; sourceTree = "<group>"; };
+		A530DF63196433D700C4FE55 /* html_completions.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = html_completions.js; sourceTree = "<group>"; };
+		A530DF64196433D700C4FE55 /* html_ruby.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = html_ruby.js; sourceTree = "<group>"; };
+		A530DF65196433D700C4FE55 /* ini.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ini.js; sourceTree = "<group>"; };
+		A530DF66196433D700C4FE55 /* jack.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jack.js; sourceTree = "<group>"; };
+		A530DF67196433D700C4FE55 /* jade.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jade.js; sourceTree = "<group>"; };
+		A530DF68196433D700C4FE55 /* java.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = java.js; sourceTree = "<group>"; };
+		A530DF69196433D700C4FE55 /* javascript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = javascript.js; sourceTree = "<group>"; };
+		A530DF6A196433D700C4FE55 /* json.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = json.js; sourceTree = "<group>"; };
+		A530DF6B196433D700C4FE55 /* jsoniq.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jsoniq.js; sourceTree = "<group>"; };
+		A530DF6C196433D700C4FE55 /* jsp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jsp.js; sourceTree = "<group>"; };
+		A530DF6D196433D700C4FE55 /* jsx.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jsx.js; sourceTree = "<group>"; };
+		A530DF6E196433D700C4FE55 /* julia.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = julia.js; sourceTree = "<group>"; };
+		A530DF6F196433D700C4FE55 /* latex.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = latex.js; sourceTree = "<group>"; };
+		A530DF70196433D700C4FE55 /* less.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = less.js; sourceTree = "<group>"; };
+		A530DF71196433D700C4FE55 /* liquid.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = liquid.js; sourceTree = "<group>"; };
+		A530DF72196433D700C4FE55 /* lisp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = lisp.js; sourceTree = "<group>"; };
+		A530DF73196433D700C4FE55 /* livescript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = livescript.js; sourceTree = "<group>"; };
+		A530DF74196433D700C4FE55 /* logiql.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = logiql.js; sourceTree = "<group>"; };
+		A530DF75196433D700C4FE55 /* lsl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = lsl.js; sourceTree = "<group>"; };
+		A530DF76196433D700C4FE55 /* lua.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = lua.js; sourceTree = "<group>"; };
+		A530DF77196433D700C4FE55 /* luapage.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = luapage.js; sourceTree = "<group>"; };
+		A530DF78196433D700C4FE55 /* lucene.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = lucene.js; sourceTree = "<group>"; };
+		A530DF79196433D700C4FE55 /* makefile.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = makefile.js; sourceTree = "<group>"; };
+		A530DF7A196433D700C4FE55 /* markdown.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = markdown.js; sourceTree = "<group>"; };
+		A530DF7B196433D700C4FE55 /* matlab.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = matlab.js; sourceTree = "<group>"; };
+		A530DF7C196433D700C4FE55 /* mel.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mel.js; sourceTree = "<group>"; };
+		A530DF7D196433D700C4FE55 /* mushcode.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mushcode.js; sourceTree = "<group>"; };
+		A530DF7E196433D700C4FE55 /* mushcode_high_rules.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mushcode_high_rules.js; sourceTree = "<group>"; };
+		A530DF7F196433D700C4FE55 /* mysql.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mysql.js; sourceTree = "<group>"; };
+		A530DF80196433D700C4FE55 /* nix.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = nix.js; sourceTree = "<group>"; };
+		A530DF81196433D700C4FE55 /* objectivec.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = objectivec.js; sourceTree = "<group>"; };
+		A530DF82196433D700C4FE55 /* ocaml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ocaml.js; sourceTree = "<group>"; };
+		A530DF83196433D700C4FE55 /* pascal.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = pascal.js; sourceTree = "<group>"; };
+		A530DF84196433D700C4FE55 /* perl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = perl.js; sourceTree = "<group>"; };
+		A530DF85196433D700C4FE55 /* pgsql.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = pgsql.js; sourceTree = "<group>"; };
+		A530DF86196433D700C4FE55 /* php.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = php.js; sourceTree = "<group>"; };
+		A530DF87196433D700C4FE55 /* plain_text.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = plain_text.js; sourceTree = "<group>"; };
+		A530DF88196433D700C4FE55 /* powershell.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = powershell.js; sourceTree = "<group>"; };
+		A530DF89196433D700C4FE55 /* prolog.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = prolog.js; sourceTree = "<group>"; };
+		A530DF8A196433D700C4FE55 /* properties.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = properties.js; sourceTree = "<group>"; };
+		A530DF8B196433D700C4FE55 /* protobuf.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = protobuf.js; sourceTree = "<group>"; };
+		A530DF8C196433D700C4FE55 /* python.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = python.js; sourceTree = "<group>"; };
+		A530DF8D196433D700C4FE55 /* r.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = r.js; sourceTree = "<group>"; };
+		A530DF8E196433D700C4FE55 /* rdoc.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rdoc.js; sourceTree = "<group>"; };
+		A530DF8F196433D700C4FE55 /* rhtml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rhtml.js; sourceTree = "<group>"; };
+		A530DF90196433D700C4FE55 /* ruby.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ruby.js; sourceTree = "<group>"; };
+		A530DF91196433D700C4FE55 /* rust.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rust.js; sourceTree = "<group>"; };
+		A530DF92196433D700C4FE55 /* sass.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sass.js; sourceTree = "<group>"; };
+		A530DF93196433D700C4FE55 /* scad.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = scad.js; sourceTree = "<group>"; };
+		A530DF94196433D700C4FE55 /* scala.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = scala.js; sourceTree = "<group>"; };
+		A530DF95196433D700C4FE55 /* scheme.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = scheme.js; sourceTree = "<group>"; };
+		A530DF96196433D700C4FE55 /* scss.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = scss.js; sourceTree = "<group>"; };
+		A530DF97196433D700C4FE55 /* sh.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sh.js; sourceTree = "<group>"; };
+		A530DF98196433D700C4FE55 /* sjs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sjs.js; sourceTree = "<group>"; };
+		A530DF99196433D700C4FE55 /* smarty.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = smarty.js; sourceTree = "<group>"; };
+		A530DF9A196433D700C4FE55 /* snippets.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = snippets.js; sourceTree = "<group>"; };
+		A530DF9B196433D700C4FE55 /* soy_template.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = soy_template.js; sourceTree = "<group>"; };
+		A530DF9C196433D700C4FE55 /* space.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = space.js; sourceTree = "<group>"; };
+		A530DF9D196433D700C4FE55 /* sql.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sql.js; sourceTree = "<group>"; };
+		A530DF9E196433D700C4FE55 /* stylus.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = stylus.js; sourceTree = "<group>"; };
+		A530DF9F196433D700C4FE55 /* svg.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = svg.js; sourceTree = "<group>"; };
+		A530DFA0196433D700C4FE55 /* tcl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tcl.js; sourceTree = "<group>"; };
+		A530DFA1196433D700C4FE55 /* tex.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tex.js; sourceTree = "<group>"; };
+		A530DFA2196433D700C4FE55 /* text.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = text.js; sourceTree = "<group>"; };
+		A530DFA3196433D700C4FE55 /* textile.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = textile.js; sourceTree = "<group>"; };
+		A530DFA4196433D700C4FE55 /* toml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = toml.js; sourceTree = "<group>"; };
+		A530DFA5196433D700C4FE55 /* twig.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = twig.js; sourceTree = "<group>"; };
+		A530DFA6196433D700C4FE55 /* typescript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = typescript.js; sourceTree = "<group>"; };
+		A530DFA7196433D700C4FE55 /* vala.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = vala.js; sourceTree = "<group>"; };
+		A530DFA8196433D700C4FE55 /* vbscript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = vbscript.js; sourceTree = "<group>"; };
+		A530DFA9196433D700C4FE55 /* velocity.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = velocity.js; sourceTree = "<group>"; };
+		A530DFAA196433D700C4FE55 /* verilog.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = verilog.js; sourceTree = "<group>"; };
+		A530DFAB196433D700C4FE55 /* vhdl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = vhdl.js; sourceTree = "<group>"; };
+		A530DFAC196433D700C4FE55 /* xml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = xml.js; sourceTree = "<group>"; };
+		A530DFAD196433D700C4FE55 /* xquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = xquery.js; sourceTree = "<group>"; };
+		A530DFAE196433D700C4FE55 /* yaml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = yaml.js; sourceTree = "<group>"; };
+		A530DFAF196433D700C4FE55 /* theme-ambiance.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-ambiance.js"; sourceTree = "<group>"; };
+		A530DFB0196433D700C4FE55 /* theme-chaos.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-chaos.js"; sourceTree = "<group>"; };
+		A530DFB1196433D700C4FE55 /* theme-chrome.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-chrome.js"; sourceTree = "<group>"; };
+		A530DFB2196433D700C4FE55 /* theme-cloud9_day.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-cloud9_day.js"; sourceTree = "<group>"; };
+		A530DFB3196433D700C4FE55 /* theme-cloud9_night.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-cloud9_night.js"; sourceTree = "<group>"; };
+		A530DFB4196433D700C4FE55 /* theme-cloud9_night_low_color.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-cloud9_night_low_color.js"; sourceTree = "<group>"; };
+		A530DFB5196433D700C4FE55 /* theme-clouds.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-clouds.js"; sourceTree = "<group>"; };
+		A530DFB6196433D700C4FE55 /* theme-clouds_midnight.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-clouds_midnight.js"; sourceTree = "<group>"; };
+		A530DFB7196433D700C4FE55 /* theme-cobalt.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-cobalt.js"; sourceTree = "<group>"; };
+		A530DFB8196433D700C4FE55 /* theme-crimson_editor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-crimson_editor.js"; sourceTree = "<group>"; };
+		A530DFB9196433D700C4FE55 /* theme-dawn.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-dawn.js"; sourceTree = "<group>"; };
+		A530DFBA196433D700C4FE55 /* theme-dreamweaver.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-dreamweaver.js"; sourceTree = "<group>"; };
+		A530DFBB196433D700C4FE55 /* theme-eclipse.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-eclipse.js"; sourceTree = "<group>"; };
+		A530DFBC196433D700C4FE55 /* theme-github.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-github.js"; sourceTree = "<group>"; };
+		A530DFBD196433D700C4FE55 /* theme-idle_fingers.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-idle_fingers.js"; sourceTree = "<group>"; };
+		A530DFBE196433D800C4FE55 /* theme-katzenmilch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-katzenmilch.js"; sourceTree = "<group>"; };
+		A530DFBF196433D800C4FE55 /* theme-kr.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-kr.js"; sourceTree = "<group>"; };
+		A530DFC0196433D800C4FE55 /* theme-kuroir.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-kuroir.js"; sourceTree = "<group>"; };
+		A530DFC1196433D800C4FE55 /* theme-merbivore.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-merbivore.js"; sourceTree = "<group>"; };
+		A530DFC2196433D800C4FE55 /* theme-merbivore_soft.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-merbivore_soft.js"; sourceTree = "<group>"; };
+		A530DFC3196433D800C4FE55 /* theme-mono_industrial.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-mono_industrial.js"; sourceTree = "<group>"; };
+		A530DFC4196433D800C4FE55 /* theme-monokai.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-monokai.js"; sourceTree = "<group>"; };
+		A530DFC5196433D800C4FE55 /* theme-pastel_on_dark.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-pastel_on_dark.js"; sourceTree = "<group>"; };
+		A530DFC6196433D800C4FE55 /* theme-solarized_dark.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-solarized_dark.js"; sourceTree = "<group>"; };
+		A530DFC7196433D800C4FE55 /* theme-solarized_light.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-solarized_light.js"; sourceTree = "<group>"; };
+		A530DFC8196433D800C4FE55 /* theme-terminal.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-terminal.js"; sourceTree = "<group>"; };
+		A530DFC9196433D800C4FE55 /* theme-textmate.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-textmate.js"; sourceTree = "<group>"; };
+		A530DFCA196433D800C4FE55 /* theme-tomorrow.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-tomorrow.js"; sourceTree = "<group>"; };
+		A530DFCB196433D800C4FE55 /* theme-tomorrow_night.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-tomorrow_night.js"; sourceTree = "<group>"; };
+		A530DFCC196433D800C4FE55 /* theme-tomorrow_night_blue.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-tomorrow_night_blue.js"; sourceTree = "<group>"; };
+		A530DFCD196433D800C4FE55 /* theme-tomorrow_night_bright.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-tomorrow_night_bright.js"; sourceTree = "<group>"; };
+		A530DFCE196433D800C4FE55 /* theme-tomorrow_night_eighties.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-tomorrow_night_eighties.js"; sourceTree = "<group>"; };
+		A530DFCF196433D800C4FE55 /* theme-twilight.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-twilight.js"; sourceTree = "<group>"; };
+		A530DFD0196433D800C4FE55 /* theme-vibrant_ink.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-vibrant_ink.js"; sourceTree = "<group>"; };
+		A530DFD1196433D800C4FE55 /* theme-xcode.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-xcode.js"; sourceTree = "<group>"; };
+		A530DFD2196433D800C4FE55 /* worker-coffee.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "worker-coffee.js"; sourceTree = "<group>"; };
+		A530DFD3196433D800C4FE55 /* worker-css.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "worker-css.js"; sourceTree = "<group>"; };
+		A530DFD4196433D800C4FE55 /* worker-html.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "worker-html.js"; sourceTree = "<group>"; };
+		A530DFD5196433D800C4FE55 /* worker-javascript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "worker-javascript.js"; sourceTree = "<group>"; };
+		A530DFD6196433D800C4FE55 /* worker-json.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "worker-json.js"; sourceTree = "<group>"; };
+		A530DFD7196433D800C4FE55 /* worker-lua.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "worker-lua.js"; sourceTree = "<group>"; };
+		A530DFD8196433D800C4FE55 /* worker-php.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "worker-php.js"; sourceTree = "<group>"; };
+		A530DFD9196433D800C4FE55 /* worker-xquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "worker-xquery.js"; sourceTree = "<group>"; };
+		A55CE57619617F6900B43B90 /* shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vsh; sourceTree = "<group>"; };
+		A55CE57A1963112C00B43B90 /* ABEventList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABEventList.h; sourceTree = "<group>"; };
+		C57803B1A8354D619D672769 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6AD3BE613724F9F8F4CCA4D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A522D2AA195C2D55004D5A4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A522D2B1195C2D55004D5A4E /* Cocoa.framework in Frameworks */,
+				89586BD35D594BD0A390573F /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A522D2A4195C2D55004D5A4E = {
+			isa = PBXGroup;
+			children = (
+				A522D2B6195C2D55004D5A4E /* ShaderFiddle */,
+				A522D2AF195C2D55004D5A4E /* Frameworks */,
+				A522D2AE195C2D55004D5A4E /* Products */,
+				E6AD3BE613724F9F8F4CCA4D /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		A522D2AE195C2D55004D5A4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A522D2AD195C2D55004D5A4E /* ShaderFiddle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A522D2AF195C2D55004D5A4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A522D2B0195C2D55004D5A4E /* Cocoa.framework */,
+				A522D2D2195C2D55004D5A4E /* XCTest.framework */,
+				A522D2B2195C2D55004D5A4E /* Other Frameworks */,
+				C57803B1A8354D619D672769 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A522D2B2195C2D55004D5A4E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A522D2B3195C2D55004D5A4E /* AppKit.framework */,
+				A522D2B4195C2D55004D5A4E /* CoreData.framework */,
+				A522D2B5195C2D55004D5A4E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A522D2B6195C2D55004D5A4E /* ShaderFiddle */ = {
+			isa = PBXGroup;
+			children = (
+				A522D2C2195C2D55004D5A4E /* ABDocument.h */,
+				A522D2C3195C2D55004D5A4E /* ABDocument.m */,
+				A522D2C5195C2D55004D5A4E /* ABDocument.xib */,
+				A522D2C8195C2D55004D5A4E /* MainMenu.xib */,
+				A522D2CB195C2D55004D5A4E /* Images.xcassets */,
+				A522D2B7195C2D55004D5A4E /* Supporting Files */,
+				A522D2EE195C6D10004D5A4E /* ABDisplayWindowController.h */,
+				A522D2EF195C6D10004D5A4E /* ABDisplayWindowController.m */,
+				A522D2F0195C6D10004D5A4E /* ABDisplayWindowController.xib */,
+				A522D2F3195C6E71004D5A4E /* ABDisplayView.h */,
+				A522D2F4195C6E71004D5A4E /* ABDisplayView.m */,
+				A522D338195DA827004D5A4E /* ABShader.h */,
+				A522D339195DA827004D5A4E /* ABShader.m */,
+				A55CE57A1963112C00B43B90 /* ABEventList.h */,
+			);
+			path = ShaderFiddle;
+			sourceTree = "<group>";
+		};
+		A522D2B7195C2D55004D5A4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A530DEB0196433D700C4FE55 /* ace */,
+				A522D2B8195C2D55004D5A4E /* ShaderFiddle-Info.plist */,
+				A522D2B9195C2D55004D5A4E /* InfoPlist.strings */,
+				A522D2BC195C2D55004D5A4E /* main.m */,
+				A522D2BE195C2D55004D5A4E /* ShaderFiddle-Prefix.pch */,
+				A522D2BF195C2D55004D5A4E /* Credits.rtf */,
+				A55CE57619617F6900B43B90 /* shader.vsh */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A530DEB0196433D700C4FE55 /* ace */ = {
+			isa = PBXGroup;
+			children = (
+				A530DEB1196433D700C4FE55 /* ace.js */,
+				A530DEB2196433D700C4FE55 /* ext-beautify.js */,
+				A530DEB3196433D700C4FE55 /* ext-chromevox.js */,
+				A530DEB4196433D700C4FE55 /* ext-elastic_tabstops_lite.js */,
+				A530DEB5196433D700C4FE55 /* ext-emmet.js */,
+				A530DEB6196433D700C4FE55 /* ext-error_marker.js */,
+				A530DEB7196433D700C4FE55 /* ext-keybinding_menu.js */,
+				A530DEB8196433D700C4FE55 /* ext-language_tools.js */,
+				A530DEB9196433D700C4FE55 /* ext-linking.js */,
+				A530DEBA196433D700C4FE55 /* ext-modelist.js */,
+				A530DEBB196433D700C4FE55 /* ext-old_ie.js */,
+				A530DEBC196433D700C4FE55 /* ext-options.js */,
+				A530DEBD196433D700C4FE55 /* ext-prompt.js */,
+				A530DEBE196433D700C4FE55 /* ext-searchbox.js */,
+				A530DEBF196433D700C4FE55 /* ext-settings_menu.js */,
+				A530DEC0196433D700C4FE55 /* ext-spellcheck.js */,
+				A530DEC1196433D700C4FE55 /* ext-split.js */,
+				A530DEC2196433D700C4FE55 /* ext-static_highlight.js */,
+				A530DEC3196433D700C4FE55 /* ext-statusbar.js */,
+				A530DEC4196433D700C4FE55 /* ext-textarea.js */,
+				A530DEC5196433D700C4FE55 /* ext-themelist.js */,
+				A530DEC6196433D700C4FE55 /* ext-whitespace.js */,
+				A530DEC7196433D700C4FE55 /* keybinding-emacs.js */,
+				A530DEC8196433D700C4FE55 /* keybinding-vim.js */,
+				A530DEC9196433D700C4FE55 /* mode-abap.js */,
+				A530DECA196433D700C4FE55 /* mode-actionscript.js */,
+				A530DECB196433D700C4FE55 /* mode-ada.js */,
+				A530DECC196433D700C4FE55 /* mode-apache_conf.js */,
+				A530DECD196433D700C4FE55 /* mode-applescript.js */,
+				A530DECE196433D700C4FE55 /* mode-asciidoc.js */,
+				A530DECF196433D700C4FE55 /* mode-assembly_x86.js */,
+				A530DED0196433D700C4FE55 /* mode-autohotkey.js */,
+				A530DED1196433D700C4FE55 /* mode-batchfile.js */,
+				A530DED2196433D700C4FE55 /* mode-c9search.js */,
+				A530DED3196433D700C4FE55 /* mode-c_cpp.js */,
+				A530DED4196433D700C4FE55 /* mode-cirru.js */,
+				A530DED5196433D700C4FE55 /* mode-clojure.js */,
+				A530DED6196433D700C4FE55 /* mode-cobol.js */,
+				A530DED7196433D700C4FE55 /* mode-coffee.js */,
+				A530DED8196433D700C4FE55 /* mode-coldfusion.js */,
+				A530DED9196433D700C4FE55 /* mode-csharp.js */,
+				A530DEDA196433D700C4FE55 /* mode-css.js */,
+				A530DEDB196433D700C4FE55 /* mode-curly.js */,
+				A530DEDC196433D700C4FE55 /* mode-d.js */,
+				A530DEDD196433D700C4FE55 /* mode-dart.js */,
+				A530DEDE196433D700C4FE55 /* mode-diff.js */,
+				A530DEDF196433D700C4FE55 /* mode-django.js */,
+				A530DEE0196433D700C4FE55 /* mode-dockerfile.js */,
+				A530DEE1196433D700C4FE55 /* mode-dot.js */,
+				A530DEE2196433D700C4FE55 /* mode-ejs.js */,
+				A530DEE3196433D700C4FE55 /* mode-erlang.js */,
+				A530DEE4196433D700C4FE55 /* mode-forth.js */,
+				A530DEE5196433D700C4FE55 /* mode-ftl.js */,
+				A530DEE6196433D700C4FE55 /* mode-gherkin.js */,
+				A530DEE7196433D700C4FE55 /* mode-glsl.js */,
+				A530DEE8196433D700C4FE55 /* mode-golang.js */,
+				A530DEE9196433D700C4FE55 /* mode-groovy.js */,
+				A530DEEA196433D700C4FE55 /* mode-haml.js */,
+				A530DEEB196433D700C4FE55 /* mode-handlebars.js */,
+				A530DEEC196433D700C4FE55 /* mode-haskell.js */,
+				A530DEED196433D700C4FE55 /* mode-haxe.js */,
+				A530DEEE196433D700C4FE55 /* mode-html.js */,
+				A530DEEF196433D700C4FE55 /* mode-html_completions.js */,
+				A530DEF0196433D700C4FE55 /* mode-html_ruby.js */,
+				A530DEF1196433D700C4FE55 /* mode-ini.js */,
+				A530DEF2196433D700C4FE55 /* mode-jack.js */,
+				A530DEF3196433D700C4FE55 /* mode-jade.js */,
+				A530DEF4196433D700C4FE55 /* mode-java.js */,
+				A530DEF5196433D700C4FE55 /* mode-javascript.js */,
+				A530DEF6196433D700C4FE55 /* mode-json.js */,
+				A530DEF7196433D700C4FE55 /* mode-jsoniq.js */,
+				A530DEF8196433D700C4FE55 /* mode-jsp.js */,
+				A530DEF9196433D700C4FE55 /* mode-jsx.js */,
+				A530DEFA196433D700C4FE55 /* mode-julia.js */,
+				A530DEFB196433D700C4FE55 /* mode-latex.js */,
+				A530DEFC196433D700C4FE55 /* mode-less.js */,
+				A530DEFD196433D700C4FE55 /* mode-liquid.js */,
+				A530DEFE196433D700C4FE55 /* mode-lisp.js */,
+				A530DEFF196433D700C4FE55 /* mode-livescript.js */,
+				A530DF00196433D700C4FE55 /* mode-logiql.js */,
+				A530DF01196433D700C4FE55 /* mode-lsl.js */,
+				A530DF02196433D700C4FE55 /* mode-lua.js */,
+				A530DF03196433D700C4FE55 /* mode-luapage.js */,
+				A530DF04196433D700C4FE55 /* mode-lucene.js */,
+				A530DF05196433D700C4FE55 /* mode-makefile.js */,
+				A530DF06196433D700C4FE55 /* mode-markdown.js */,
+				A530DF07196433D700C4FE55 /* mode-matlab.js */,
+				A530DF08196433D700C4FE55 /* mode-mel.js */,
+				A530DF09196433D700C4FE55 /* mode-mushcode.js */,
+				A530DF0A196433D700C4FE55 /* mode-mushcode_high_rules.js */,
+				A530DF0B196433D700C4FE55 /* mode-mysql.js */,
+				A530DF0C196433D700C4FE55 /* mode-nix.js */,
+				A530DF0D196433D700C4FE55 /* mode-objectivec.js */,
+				A530DF0E196433D700C4FE55 /* mode-ocaml.js */,
+				A530DF0F196433D700C4FE55 /* mode-pascal.js */,
+				A530DF10196433D700C4FE55 /* mode-perl.js */,
+				A530DF11196433D700C4FE55 /* mode-pgsql.js */,
+				A530DF12196433D700C4FE55 /* mode-php.js */,
+				A530DF13196433D700C4FE55 /* mode-plain_text.js */,
+				A530DF14196433D700C4FE55 /* mode-powershell.js */,
+				A530DF15196433D700C4FE55 /* mode-prolog.js */,
+				A530DF16196433D700C4FE55 /* mode-properties.js */,
+				A530DF17196433D700C4FE55 /* mode-protobuf.js */,
+				A530DF18196433D700C4FE55 /* mode-python.js */,
+				A530DF19196433D700C4FE55 /* mode-r.js */,
+				A530DF1A196433D700C4FE55 /* mode-rdoc.js */,
+				A530DF1B196433D700C4FE55 /* mode-rhtml.js */,
+				A530DF1C196433D700C4FE55 /* mode-ruby.js */,
+				A530DF1D196433D700C4FE55 /* mode-rust.js */,
+				A530DF1E196433D700C4FE55 /* mode-sass.js */,
+				A530DF1F196433D700C4FE55 /* mode-scad.js */,
+				A530DF20196433D700C4FE55 /* mode-scala.js */,
+				A530DF21196433D700C4FE55 /* mode-scheme.js */,
+				A530DF22196433D700C4FE55 /* mode-scss.js */,
+				A530DF23196433D700C4FE55 /* mode-sh.js */,
+				A530DF24196433D700C4FE55 /* mode-sjs.js */,
+				A530DF25196433D700C4FE55 /* mode-smarty.js */,
+				A530DF26196433D700C4FE55 /* mode-snippets.js */,
+				A530DF27196433D700C4FE55 /* mode-soy_template.js */,
+				A530DF28196433D700C4FE55 /* mode-space.js */,
+				A530DF29196433D700C4FE55 /* mode-sql.js */,
+				A530DF2A196433D700C4FE55 /* mode-stylus.js */,
+				A530DF2B196433D700C4FE55 /* mode-svg.js */,
+				A530DF2C196433D700C4FE55 /* mode-tcl.js */,
+				A530DF2D196433D700C4FE55 /* mode-tex.js */,
+				A530DF2E196433D700C4FE55 /* mode-text.js */,
+				A530DF2F196433D700C4FE55 /* mode-textile.js */,
+				A530DF30196433D700C4FE55 /* mode-tmsnippet.js */,
+				A530DF31196433D700C4FE55 /* mode-toml.js */,
+				A530DF32196433D700C4FE55 /* mode-twig.js */,
+				A530DF33196433D700C4FE55 /* mode-typescript.js */,
+				A530DF34196433D700C4FE55 /* mode-vala.js */,
+				A530DF35196433D700C4FE55 /* mode-vbscript.js */,
+				A530DF36196433D700C4FE55 /* mode-velocity.js */,
+				A530DF37196433D700C4FE55 /* mode-verilog.js */,
+				A530DF38196433D700C4FE55 /* mode-vhdl.js */,
+				A530DF39196433D700C4FE55 /* mode-xml.js */,
+				A530DF3A196433D700C4FE55 /* mode-xquery.js */,
+				A530DF3B196433D700C4FE55 /* mode-yaml.js */,
+				A530DF3C196433D700C4FE55 /* snippets */,
+				A530DFAF196433D700C4FE55 /* theme-ambiance.js */,
+				A530DFB0196433D700C4FE55 /* theme-chaos.js */,
+				A530DFB1196433D700C4FE55 /* theme-chrome.js */,
+				A530DFB2196433D700C4FE55 /* theme-cloud9_day.js */,
+				A530DFB3196433D700C4FE55 /* theme-cloud9_night.js */,
+				A530DFB4196433D700C4FE55 /* theme-cloud9_night_low_color.js */,
+				A530DFB5196433D700C4FE55 /* theme-clouds.js */,
+				A530DFB6196433D700C4FE55 /* theme-clouds_midnight.js */,
+				A530DFB7196433D700C4FE55 /* theme-cobalt.js */,
+				A530DFB8196433D700C4FE55 /* theme-crimson_editor.js */,
+				A530DFB9196433D700C4FE55 /* theme-dawn.js */,
+				A530DFBA196433D700C4FE55 /* theme-dreamweaver.js */,
+				A530DFBB196433D700C4FE55 /* theme-eclipse.js */,
+				A530DFBC196433D700C4FE55 /* theme-github.js */,
+				A530DFBD196433D700C4FE55 /* theme-idle_fingers.js */,
+				A530DFBE196433D800C4FE55 /* theme-katzenmilch.js */,
+				A530DFBF196433D800C4FE55 /* theme-kr.js */,
+				A530DFC0196433D800C4FE55 /* theme-kuroir.js */,
+				A530DFC1196433D800C4FE55 /* theme-merbivore.js */,
+				A530DFC2196433D800C4FE55 /* theme-merbivore_soft.js */,
+				A530DFC3196433D800C4FE55 /* theme-mono_industrial.js */,
+				A530DFC4196433D800C4FE55 /* theme-monokai.js */,
+				A530DFC5196433D800C4FE55 /* theme-pastel_on_dark.js */,
+				A530DFC6196433D800C4FE55 /* theme-solarized_dark.js */,
+				A530DFC7196433D800C4FE55 /* theme-solarized_light.js */,
+				A530DFC8196433D800C4FE55 /* theme-terminal.js */,
+				A530DFC9196433D800C4FE55 /* theme-textmate.js */,
+				A530DFCA196433D800C4FE55 /* theme-tomorrow.js */,
+				A530DFCB196433D800C4FE55 /* theme-tomorrow_night.js */,
+				A530DFCC196433D800C4FE55 /* theme-tomorrow_night_blue.js */,
+				A530DFCD196433D800C4FE55 /* theme-tomorrow_night_bright.js */,
+				A530DFCE196433D800C4FE55 /* theme-tomorrow_night_eighties.js */,
+				A530DFCF196433D800C4FE55 /* theme-twilight.js */,
+				A530DFD0196433D800C4FE55 /* theme-vibrant_ink.js */,
+				A530DFD1196433D800C4FE55 /* theme-xcode.js */,
+				A530DFD2196433D800C4FE55 /* worker-coffee.js */,
+				A530DFD3196433D800C4FE55 /* worker-css.js */,
+				A530DFD4196433D800C4FE55 /* worker-html.js */,
+				A530DFD5196433D800C4FE55 /* worker-javascript.js */,
+				A530DFD6196433D800C4FE55 /* worker-json.js */,
+				A530DFD7196433D800C4FE55 /* worker-lua.js */,
+				A530DFD8196433D800C4FE55 /* worker-php.js */,
+				A530DFD9196433D800C4FE55 /* worker-xquery.js */,
+			);
+			path = ace;
+			sourceTree = "<group>";
+		};
+		A530DF3C196433D700C4FE55 /* snippets */ = {
+			isa = PBXGroup;
+			children = (
+				A530DF3D196433D700C4FE55 /* abap.js */,
+				A530DF3E196433D700C4FE55 /* actionscript.js */,
+				A530DF3F196433D700C4FE55 /* ada.js */,
+				A530DF40196433D700C4FE55 /* apache_conf.js */,
+				A530DF41196433D700C4FE55 /* applescript.js */,
+				A530DF42196433D700C4FE55 /* asciidoc.js */,
+				A530DF43196433D700C4FE55 /* assembly_x86.js */,
+				A530DF44196433D700C4FE55 /* autohotkey.js */,
+				A530DF45196433D700C4FE55 /* batchfile.js */,
+				A530DF46196433D700C4FE55 /* c9search.js */,
+				A530DF47196433D700C4FE55 /* c_cpp.js */,
+				A530DF48196433D700C4FE55 /* cirru.js */,
+				A530DF49196433D700C4FE55 /* clojure.js */,
+				A530DF4A196433D700C4FE55 /* cobol.js */,
+				A530DF4B196433D700C4FE55 /* coffee.js */,
+				A530DF4C196433D700C4FE55 /* coldfusion.js */,
+				A530DF4D196433D700C4FE55 /* csharp.js */,
+				A530DF4E196433D700C4FE55 /* css.js */,
+				A530DF4F196433D700C4FE55 /* curly.js */,
+				A530DF50196433D700C4FE55 /* d.js */,
+				A530DF51196433D700C4FE55 /* dart.js */,
+				A530DF52196433D700C4FE55 /* diff.js */,
+				A530DF53196433D700C4FE55 /* django.js */,
+				A530DF54196433D700C4FE55 /* dockerfile.js */,
+				A530DF55196433D700C4FE55 /* dot.js */,
+				A530DF56196433D700C4FE55 /* ejs.js */,
+				A530DF57196433D700C4FE55 /* erlang.js */,
+				A530DF58196433D700C4FE55 /* forth.js */,
+				A530DF59196433D700C4FE55 /* ftl.js */,
+				A530DF5A196433D700C4FE55 /* gherkin.js */,
+				A530DF5B196433D700C4FE55 /* glsl.js */,
+				A530DF5C196433D700C4FE55 /* golang.js */,
+				A530DF5D196433D700C4FE55 /* groovy.js */,
+				A530DF5E196433D700C4FE55 /* haml.js */,
+				A530DF5F196433D700C4FE55 /* handlebars.js */,
+				A530DF60196433D700C4FE55 /* haskell.js */,
+				A530DF61196433D700C4FE55 /* haxe.js */,
+				A530DF62196433D700C4FE55 /* html.js */,
+				A530DF63196433D700C4FE55 /* html_completions.js */,
+				A530DF64196433D700C4FE55 /* html_ruby.js */,
+				A530DF65196433D700C4FE55 /* ini.js */,
+				A530DF66196433D700C4FE55 /* jack.js */,
+				A530DF67196433D700C4FE55 /* jade.js */,
+				A530DF68196433D700C4FE55 /* java.js */,
+				A530DF69196433D700C4FE55 /* javascript.js */,
+				A530DF6A196433D700C4FE55 /* json.js */,
+				A530DF6B196433D700C4FE55 /* jsoniq.js */,
+				A530DF6C196433D700C4FE55 /* jsp.js */,
+				A530DF6D196433D700C4FE55 /* jsx.js */,
+				A530DF6E196433D700C4FE55 /* julia.js */,
+				A530DF6F196433D700C4FE55 /* latex.js */,
+				A530DF70196433D700C4FE55 /* less.js */,
+				A530DF71196433D700C4FE55 /* liquid.js */,
+				A530DF72196433D700C4FE55 /* lisp.js */,
+				A530DF73196433D700C4FE55 /* livescript.js */,
+				A530DF74196433D700C4FE55 /* logiql.js */,
+				A530DF75196433D700C4FE55 /* lsl.js */,
+				A530DF76196433D700C4FE55 /* lua.js */,
+				A530DF77196433D700C4FE55 /* luapage.js */,
+				A530DF78196433D700C4FE55 /* lucene.js */,
+				A530DF79196433D700C4FE55 /* makefile.js */,
+				A530DF7A196433D700C4FE55 /* markdown.js */,
+				A530DF7B196433D700C4FE55 /* matlab.js */,
+				A530DF7C196433D700C4FE55 /* mel.js */,
+				A530DF7D196433D700C4FE55 /* mushcode.js */,
+				A530DF7E196433D700C4FE55 /* mushcode_high_rules.js */,
+				A530DF7F196433D700C4FE55 /* mysql.js */,
+				A530DF80196433D700C4FE55 /* nix.js */,
+				A530DF81196433D700C4FE55 /* objectivec.js */,
+				A530DF82196433D700C4FE55 /* ocaml.js */,
+				A530DF83196433D700C4FE55 /* pascal.js */,
+				A530DF84196433D700C4FE55 /* perl.js */,
+				A530DF85196433D700C4FE55 /* pgsql.js */,
+				A530DF86196433D700C4FE55 /* php.js */,
+				A530DF87196433D700C4FE55 /* plain_text.js */,
+				A530DF88196433D700C4FE55 /* powershell.js */,
+				A530DF89196433D700C4FE55 /* prolog.js */,
+				A530DF8A196433D700C4FE55 /* properties.js */,
+				A530DF8B196433D700C4FE55 /* protobuf.js */,
+				A530DF8C196433D700C4FE55 /* python.js */,
+				A530DF8D196433D700C4FE55 /* r.js */,
+				A530DF8E196433D700C4FE55 /* rdoc.js */,
+				A530DF8F196433D700C4FE55 /* rhtml.js */,
+				A530DF90196433D700C4FE55 /* ruby.js */,
+				A530DF91196433D700C4FE55 /* rust.js */,
+				A530DF92196433D700C4FE55 /* sass.js */,
+				A530DF93196433D700C4FE55 /* scad.js */,
+				A530DF94196433D700C4FE55 /* scala.js */,
+				A530DF95196433D700C4FE55 /* scheme.js */,
+				A530DF96196433D700C4FE55 /* scss.js */,
+				A530DF97196433D700C4FE55 /* sh.js */,
+				A530DF98196433D700C4FE55 /* sjs.js */,
+				A530DF99196433D700C4FE55 /* smarty.js */,
+				A530DF9A196433D700C4FE55 /* snippets.js */,
+				A530DF9B196433D700C4FE55 /* soy_template.js */,
+				A530DF9C196433D700C4FE55 /* space.js */,
+				A530DF9D196433D700C4FE55 /* sql.js */,
+				A530DF9E196433D700C4FE55 /* stylus.js */,
+				A530DF9F196433D700C4FE55 /* svg.js */,
+				A530DFA0196433D700C4FE55 /* tcl.js */,
+				A530DFA1196433D700C4FE55 /* tex.js */,
+				A530DFA2196433D700C4FE55 /* text.js */,
+				A530DFA3196433D700C4FE55 /* textile.js */,
+				A530DFA4196433D700C4FE55 /* toml.js */,
+				A530DFA5196433D700C4FE55 /* twig.js */,
+				A530DFA6196433D700C4FE55 /* typescript.js */,
+				A530DFA7196433D700C4FE55 /* vala.js */,
+				A530DFA8196433D700C4FE55 /* vbscript.js */,
+				A530DFA9196433D700C4FE55 /* velocity.js */,
+				A530DFAA196433D700C4FE55 /* verilog.js */,
+				A530DFAB196433D700C4FE55 /* vhdl.js */,
+				A530DFAC196433D700C4FE55 /* xml.js */,
+				A530DFAD196433D700C4FE55 /* xquery.js */,
+				A530DFAE196433D700C4FE55 /* yaml.js */,
+			);
+			path = snippets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A522D2AC195C2D55004D5A4E /* ShaderFiddle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A522D2E1195C2D55004D5A4E /* Build configuration list for PBXNativeTarget "ShaderFiddle" */;
+			buildPhases = (
+				395EB21A92F2493494E7A2A9 /* Check Pods Manifest.lock */,
+				A522D2A9195C2D55004D5A4E /* Sources */,
+				A522D2AA195C2D55004D5A4E /* Frameworks */,
+				A522D2AB195C2D55004D5A4E /* Resources */,
+				6FCFAF50CB234E46A528D0E3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShaderFiddle;
+			productName = ShaderFiddle;
+			productReference = A522D2AD195C2D55004D5A4E /* ShaderFiddle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A522D2A5195C2D55004D5A4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Andy Best";
+			};
+			buildConfigurationList = A522D2A8195C2D55004D5A4E /* Build configuration list for PBXProject "ShaderFiddle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A522D2A4195C2D55004D5A4E;
+			productRefGroup = A522D2AE195C2D55004D5A4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A522D2AC195C2D55004D5A4E /* ShaderFiddle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A522D2AB195C2D55004D5A4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A55CE57719617F6900B43B90 /* shader.vsh in Resources */,
+				A522D2BB195C2D55004D5A4E /* InfoPlist.strings in Resources */,
+				A522D2CC195C2D55004D5A4E /* Images.xcassets in Resources */,
+				A522D2F2195C6D10004D5A4E /* ABDisplayWindowController.xib in Resources */,
+				A522D2C1195C2D55004D5A4E /* Credits.rtf in Resources */,
+				A522D2C7195C2D55004D5A4E /* ABDocument.xib in Resources */,
+				A522D2CA195C2D55004D5A4E /* MainMenu.xib in Resources */,
+				A530E1021964343400C4FE55 /* ace.js in Resources */,
+				A530E1031964345000C4FE55 /* ext-beautify.js in Resources */,
+				A530E1041964345000C4FE55 /* ext-chromevox.js in Resources */,
+				A530E1051964345000C4FE55 /* ext-elastic_tabstops_lite.js in Resources */,
+				A530E1061964345000C4FE55 /* ext-emmet.js in Resources */,
+				A530E1071964345000C4FE55 /* ext-error_marker.js in Resources */,
+				A530E1081964345000C4FE55 /* ext-keybinding_menu.js in Resources */,
+				A530E1091964345100C4FE55 /* ext-language_tools.js in Resources */,
+				A530E10A1964345100C4FE55 /* ext-linking.js in Resources */,
+				A530E10B1964345100C4FE55 /* ext-modelist.js in Resources */,
+				A530E10C1964345100C4FE55 /* ext-old_ie.js in Resources */,
+				A530E10D1964345100C4FE55 /* ext-options.js in Resources */,
+				A530E10E1964345100C4FE55 /* ext-prompt.js in Resources */,
+				A530E10F1964345100C4FE55 /* ext-searchbox.js in Resources */,
+				A530E1101964345100C4FE55 /* ext-settings_menu.js in Resources */,
+				A530E1111964345100C4FE55 /* ext-spellcheck.js in Resources */,
+				A530E1121964345100C4FE55 /* ext-split.js in Resources */,
+				A530E1131964345100C4FE55 /* ext-static_highlight.js in Resources */,
+				A530E1141964345100C4FE55 /* ext-statusbar.js in Resources */,
+				A530E1151964345100C4FE55 /* ext-textarea.js in Resources */,
+				A530E1161964345100C4FE55 /* ext-themelist.js in Resources */,
+				A530E1171964345100C4FE55 /* ext-whitespace.js in Resources */,
+				A530E1181964345100C4FE55 /* keybinding-emacs.js in Resources */,
+				A530E1191964345100C4FE55 /* keybinding-vim.js in Resources */,
+				A530E11A1964345100C4FE55 /* mode-abap.js in Resources */,
+				A530E11B1964345100C4FE55 /* mode-actionscript.js in Resources */,
+				A530E11C1964345100C4FE55 /* mode-ada.js in Resources */,
+				A530E11D1964345100C4FE55 /* mode-apache_conf.js in Resources */,
+				A530E11E1964345100C4FE55 /* mode-applescript.js in Resources */,
+				A530E11F1964345100C4FE55 /* mode-asciidoc.js in Resources */,
+				A530E1201964345100C4FE55 /* mode-assembly_x86.js in Resources */,
+				A530E1211964345100C4FE55 /* mode-autohotkey.js in Resources */,
+				A530E1221964345100C4FE55 /* mode-batchfile.js in Resources */,
+				A530E1231964345100C4FE55 /* mode-c9search.js in Resources */,
+				A530E1241964345100C4FE55 /* mode-c_cpp.js in Resources */,
+				A530E1251964345100C4FE55 /* mode-cirru.js in Resources */,
+				A530E1261964345100C4FE55 /* mode-clojure.js in Resources */,
+				A530E1271964345100C4FE55 /* mode-cobol.js in Resources */,
+				A530E1281964345100C4FE55 /* mode-coffee.js in Resources */,
+				A530E1291964345100C4FE55 /* mode-coldfusion.js in Resources */,
+				A530E12A1964345100C4FE55 /* mode-csharp.js in Resources */,
+				A530E12B1964345100C4FE55 /* mode-css.js in Resources */,
+				A530E12C1964345100C4FE55 /* mode-curly.js in Resources */,
+				A530E12D1964345100C4FE55 /* mode-d.js in Resources */,
+				A530E12E1964345100C4FE55 /* mode-dart.js in Resources */,
+				A530E12F1964345100C4FE55 /* mode-diff.js in Resources */,
+				A530E1301964345100C4FE55 /* mode-django.js in Resources */,
+				A530E1311964345100C4FE55 /* mode-dockerfile.js in Resources */,
+				A530E1321964345100C4FE55 /* mode-dot.js in Resources */,
+				A530E1331964345100C4FE55 /* mode-ejs.js in Resources */,
+				A530E1341964345100C4FE55 /* mode-erlang.js in Resources */,
+				A530E1351964345100C4FE55 /* mode-forth.js in Resources */,
+				A530E1361964345100C4FE55 /* mode-ftl.js in Resources */,
+				A530E1371964345100C4FE55 /* mode-gherkin.js in Resources */,
+				A530E1381964345100C4FE55 /* mode-glsl.js in Resources */,
+				A530E1391964345100C4FE55 /* mode-golang.js in Resources */,
+				A530E13A1964345100C4FE55 /* mode-groovy.js in Resources */,
+				A530E13B1964345100C4FE55 /* mode-haml.js in Resources */,
+				A530E13C1964345100C4FE55 /* mode-handlebars.js in Resources */,
+				A530E13D1964345100C4FE55 /* mode-haskell.js in Resources */,
+				A530E13E1964345100C4FE55 /* mode-haxe.js in Resources */,
+				A530E13F1964345100C4FE55 /* mode-html.js in Resources */,
+				A530E1401964345100C4FE55 /* mode-html_completions.js in Resources */,
+				A530E1411964345100C4FE55 /* mode-html_ruby.js in Resources */,
+				A530E1421964345100C4FE55 /* mode-ini.js in Resources */,
+				A530E1431964345100C4FE55 /* mode-jack.js in Resources */,
+				A530E1441964345100C4FE55 /* mode-jade.js in Resources */,
+				A530E1451964345100C4FE55 /* mode-java.js in Resources */,
+				A530E1461964345100C4FE55 /* mode-javascript.js in Resources */,
+				A530E1471964345100C4FE55 /* mode-json.js in Resources */,
+				A530E1481964345100C4FE55 /* mode-jsoniq.js in Resources */,
+				A530E1491964345100C4FE55 /* mode-jsp.js in Resources */,
+				A530E14A1964345100C4FE55 /* mode-jsx.js in Resources */,
+				A530E14B1964345100C4FE55 /* mode-julia.js in Resources */,
+				A530E14C1964345100C4FE55 /* mode-latex.js in Resources */,
+				A530E14D1964345100C4FE55 /* mode-less.js in Resources */,
+				A530E14E1964345100C4FE55 /* mode-liquid.js in Resources */,
+				A530E14F1964345100C4FE55 /* mode-lisp.js in Resources */,
+				A530E1501964345100C4FE55 /* mode-livescript.js in Resources */,
+				A530E1511964345100C4FE55 /* mode-logiql.js in Resources */,
+				A530E1521964345100C4FE55 /* mode-lsl.js in Resources */,
+				A530E1531964345100C4FE55 /* mode-lua.js in Resources */,
+				A530E1541964345100C4FE55 /* mode-luapage.js in Resources */,
+				A530E1551964345100C4FE55 /* mode-lucene.js in Resources */,
+				A530E1561964345100C4FE55 /* mode-makefile.js in Resources */,
+				A530E1571964345100C4FE55 /* mode-markdown.js in Resources */,
+				A530E1581964345100C4FE55 /* mode-matlab.js in Resources */,
+				A530E1591964345100C4FE55 /* mode-mel.js in Resources */,
+				A530E15A1964345100C4FE55 /* mode-mushcode.js in Resources */,
+				A530E15B1964345100C4FE55 /* mode-mushcode_high_rules.js in Resources */,
+				A530E15C1964345100C4FE55 /* mode-mysql.js in Resources */,
+				A530E15D1964345100C4FE55 /* mode-nix.js in Resources */,
+				A530E15E1964345100C4FE55 /* mode-objectivec.js in Resources */,
+				A530E15F1964345100C4FE55 /* mode-ocaml.js in Resources */,
+				A530E1601964345100C4FE55 /* mode-pascal.js in Resources */,
+				A530E1611964345100C4FE55 /* mode-perl.js in Resources */,
+				A530E1621964345100C4FE55 /* mode-pgsql.js in Resources */,
+				A530E1631964345100C4FE55 /* mode-php.js in Resources */,
+				A530E1641964345100C4FE55 /* mode-plain_text.js in Resources */,
+				A530E1651964345100C4FE55 /* mode-powershell.js in Resources */,
+				A530E1661964345100C4FE55 /* mode-prolog.js in Resources */,
+				A530E1671964345100C4FE55 /* mode-properties.js in Resources */,
+				A530E1681964345100C4FE55 /* mode-protobuf.js in Resources */,
+				A530E1691964345100C4FE55 /* mode-python.js in Resources */,
+				A530E16A1964345100C4FE55 /* mode-r.js in Resources */,
+				A530E16B1964345100C4FE55 /* mode-rdoc.js in Resources */,
+				A530E16C1964345100C4FE55 /* mode-rhtml.js in Resources */,
+				A530E16D1964345100C4FE55 /* mode-ruby.js in Resources */,
+				A530E16E1964345100C4FE55 /* mode-rust.js in Resources */,
+				A530E16F1964345100C4FE55 /* mode-sass.js in Resources */,
+				A530E1701964345100C4FE55 /* mode-scad.js in Resources */,
+				A530E1711964345100C4FE55 /* mode-scala.js in Resources */,
+				A530E1721964345100C4FE55 /* mode-scheme.js in Resources */,
+				A530E1731964345100C4FE55 /* mode-scss.js in Resources */,
+				A530E1741964345100C4FE55 /* mode-sh.js in Resources */,
+				A530E1751964345100C4FE55 /* mode-sjs.js in Resources */,
+				A530E1761964345100C4FE55 /* mode-smarty.js in Resources */,
+				A530E1771964345100C4FE55 /* mode-snippets.js in Resources */,
+				A530E1781964345100C4FE55 /* mode-soy_template.js in Resources */,
+				A530E1791964345100C4FE55 /* mode-space.js in Resources */,
+				A530E17A1964345100C4FE55 /* mode-sql.js in Resources */,
+				A530E17B1964345100C4FE55 /* mode-stylus.js in Resources */,
+				A530E17C1964345100C4FE55 /* mode-svg.js in Resources */,
+				A530E17D1964345100C4FE55 /* mode-tcl.js in Resources */,
+				A530E17E1964345100C4FE55 /* mode-tex.js in Resources */,
+				A530E17F1964345100C4FE55 /* mode-text.js in Resources */,
+				A530E1801964345100C4FE55 /* mode-textile.js in Resources */,
+				A530E1811964345100C4FE55 /* mode-tmsnippet.js in Resources */,
+				A530E1821964345100C4FE55 /* mode-toml.js in Resources */,
+				A530E1831964345100C4FE55 /* mode-twig.js in Resources */,
+				A530E1841964345100C4FE55 /* mode-typescript.js in Resources */,
+				A530E1851964345100C4FE55 /* mode-vala.js in Resources */,
+				A530E1861964345100C4FE55 /* mode-vbscript.js in Resources */,
+				A530E1871964345100C4FE55 /* mode-velocity.js in Resources */,
+				A530E1881964345100C4FE55 /* mode-verilog.js in Resources */,
+				A530E1891964345100C4FE55 /* mode-vhdl.js in Resources */,
+				A530E18A1964345100C4FE55 /* mode-xml.js in Resources */,
+				A530E18B1964345100C4FE55 /* mode-xquery.js in Resources */,
+				A530E18C1964345100C4FE55 /* mode-yaml.js in Resources */,
+				A530E18D1964345100C4FE55 /* theme-ambiance.js in Resources */,
+				A530E18E1964345100C4FE55 /* theme-chaos.js in Resources */,
+				A530E18F1964345100C4FE55 /* theme-chrome.js in Resources */,
+				A530E1901964345100C4FE55 /* theme-cloud9_day.js in Resources */,
+				A530E1911964345100C4FE55 /* theme-cloud9_night.js in Resources */,
+				A530E1921964345100C4FE55 /* theme-cloud9_night_low_color.js in Resources */,
+				A530E1931964345100C4FE55 /* theme-clouds.js in Resources */,
+				A530E1941964345100C4FE55 /* theme-clouds_midnight.js in Resources */,
+				A530E1951964345100C4FE55 /* theme-cobalt.js in Resources */,
+				A530E1961964345100C4FE55 /* theme-crimson_editor.js in Resources */,
+				A530E1971964345100C4FE55 /* theme-dawn.js in Resources */,
+				A530E1981964345100C4FE55 /* theme-dreamweaver.js in Resources */,
+				A530E1991964345100C4FE55 /* theme-eclipse.js in Resources */,
+				A530E19A1964345100C4FE55 /* theme-github.js in Resources */,
+				A530E19B1964345100C4FE55 /* theme-idle_fingers.js in Resources */,
+				A530E19C1964345100C4FE55 /* theme-katzenmilch.js in Resources */,
+				A530E19D1964345100C4FE55 /* theme-kr.js in Resources */,
+				A530E19E1964345100C4FE55 /* theme-kuroir.js in Resources */,
+				A530E19F1964345100C4FE55 /* theme-merbivore.js in Resources */,
+				A530E1A01964345100C4FE55 /* theme-merbivore_soft.js in Resources */,
+				A530E1A11964345100C4FE55 /* theme-mono_industrial.js in Resources */,
+				A530E1A21964345100C4FE55 /* theme-monokai.js in Resources */,
+				A530E1A31964345100C4FE55 /* theme-pastel_on_dark.js in Resources */,
+				A530E1A41964345100C4FE55 /* theme-solarized_dark.js in Resources */,
+				A530E1A51964345100C4FE55 /* theme-solarized_light.js in Resources */,
+				A530E1A61964345100C4FE55 /* theme-terminal.js in Resources */,
+				A530E1A71964345100C4FE55 /* theme-textmate.js in Resources */,
+				A530E1A81964345100C4FE55 /* theme-tomorrow.js in Resources */,
+				A530E1A91964345100C4FE55 /* theme-tomorrow_night.js in Resources */,
+				A530E1AA1964345100C4FE55 /* theme-tomorrow_night_blue.js in Resources */,
+				A530E1AB1964345100C4FE55 /* theme-tomorrow_night_bright.js in Resources */,
+				A530E1AC1964345100C4FE55 /* theme-tomorrow_night_eighties.js in Resources */,
+				A530E1AD1964345100C4FE55 /* theme-twilight.js in Resources */,
+				A530E1AE1964345100C4FE55 /* theme-vibrant_ink.js in Resources */,
+				A530E1AF1964345100C4FE55 /* theme-xcode.js in Resources */,
+				A530E1B01964345100C4FE55 /* worker-coffee.js in Resources */,
+				A530E1B11964345100C4FE55 /* worker-css.js in Resources */,
+				A530E1B21964345100C4FE55 /* worker-html.js in Resources */,
+				A530E1B31964345100C4FE55 /* worker-javascript.js in Resources */,
+				A530E1B41964345100C4FE55 /* worker-json.js in Resources */,
+				A530E1B51964345100C4FE55 /* worker-lua.js in Resources */,
+				A530E1B61964345100C4FE55 /* worker-php.js in Resources */,
+				A530E1B71964345100C4FE55 /* worker-xquery.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		395EB21A92F2493494E7A2A9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FCFAF50CB234E46A528D0E3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A522D2A9195C2D55004D5A4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A522D2F1195C6D10004D5A4E /* ABDisplayWindowController.m in Sources */,
+				A522D33A195DA827004D5A4E /* ABShader.m in Sources */,
+				A522D2BD195C2D55004D5A4E /* main.m in Sources */,
+				A522D2F5195C6E71004D5A4E /* ABDisplayView.m in Sources */,
+				A522D2C4195C2D55004D5A4E /* ABDocument.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A522D2B9195C2D55004D5A4E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A522D2BA195C2D55004D5A4E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A522D2BF195C2D55004D5A4E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A522D2C0195C2D55004D5A4E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		A522D2C5195C2D55004D5A4E /* ABDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A522D2C6195C2D55004D5A4E /* Base */,
+			);
+			name = ABDocument.xib;
+			sourceTree = "<group>";
+		};
+		A522D2C8195C2D55004D5A4E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A522D2C9195C2D55004D5A4E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A522D2DF195C2D55004D5A4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A522D2E0195C2D55004D5A4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A522D2E2195C2D55004D5A4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6AD3BE613724F9F8F4CCA4D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShaderFiddle/ShaderFiddle-Prefix.pch";
+				INFOPLIST_FILE = "ShaderFiddle/ShaderFiddle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A522D2E3195C2D55004D5A4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6AD3BE613724F9F8F4CCA4D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShaderFiddle/ShaderFiddle-Prefix.pch";
+				INFOPLIST_FILE = "ShaderFiddle/ShaderFiddle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A522D2A8195C2D55004D5A4E /* Build configuration list for PBXProject "ShaderFiddle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A522D2DF195C2D55004D5A4E /* Debug */,
+				A522D2E0195C2D55004D5A4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A522D2E1195C2D55004D5A4E /* Build configuration list for PBXNativeTarget "ShaderFiddle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A522D2E2195C2D55004D5A4E /* Debug */,
+				A522D2E3195C2D55004D5A4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A522D2A5195C2D55004D5A4E /* Project object */;
+}
