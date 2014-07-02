@@ -1,7 +1,7 @@
 ShaderFiddle
 ============
 
-ShaderFiddle is an OS X application that allows for live experimentation with Fragment shaders. It is designed to be (mostly) compatible with [shadertoy](http://shadertoy.com).
+ShaderFiddle is an OS X application that allows for live experimentation with GLSL Fragment shaders. It is designed to be (mostly) compatible with [shadertoy](http://shadertoy.com).
 
 All of the uniforms are added automatically to the top of the fragment shader, leaving just the main method to be created.
 
