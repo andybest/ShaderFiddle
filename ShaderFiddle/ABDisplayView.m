@@ -198,7 +198,7 @@ typedef struct
     [self.openGLContext makeCurrentContext];
     @try {
         NSArray *attrs = @[ @"position" ];
-        NSArray *unifs = @[ @"iResolution", @"iGlobalTime", @"iMouse", @"iDate", @"iFFT", @"iOnset", @"iGroupedFFT" ];
+        NSArray *unifs = @[ @"iResolution", @"iGlobalTime", @"iMouse", @"iDate", @"iFFT" ];
 
         self.shader = [[ABShader alloc] init];
         _shader.delegate = self;
