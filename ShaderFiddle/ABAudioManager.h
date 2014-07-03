@@ -9,15 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <Novocaine.h>
 #import <Accelerate/Accelerate.h>
-#import <aubio/aubio.h>
 
 @interface ABAudioManager : NSObject {
     FFTSetup fftSetup;
     COMPLEX_SPLIT A;
-
-    aubio_onset_t *o;
-    fvec_t *onset;
-    smpl_t is_onset;
 }
 
 + (instancetype)sharedInstance;

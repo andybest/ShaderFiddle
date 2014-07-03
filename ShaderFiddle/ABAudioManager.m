@@ -25,7 +25,6 @@
 {
     if ((self = [super init])) {
         [self setupFFT];
-        [self setupOnset];
     }
     return self;
 }
@@ -35,7 +34,6 @@
     free(A.realp);
     free(A.imagp);
     vDSP_destroy_fftsetup(fftSetup);
-    del_aubio_onset(o);
 }
 
 - (void)setupFFT
@@ -46,13 +44,6 @@
     int nOver2 = numSamples / 2;
     A.realp = (float *)malloc(nOver2 * sizeof(float));
     A.imagp = (float *)malloc(nOver2 * sizeof(float));
-}
-
-- (void)setupOnset
-{
-    uint_t win_size = 512;
-    o = new_aubio_onset("normal", 512, win_size / 4, 44100);
-    onset = new_fvec(2);
 }
 
 - (void)startAudio
