@@ -17,3 +17,5 @@ The fragment colour is output with the variable
 	out vec4 fragColor
 
 Shaders are `#version 330`, so GL_FragColor is not available for use.
+
+The FFT information is taken from the current system audio input source.
