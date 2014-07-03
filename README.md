@@ -10,6 +10,7 @@ There are several uniforms available for use:
 	uniform float iGlobalTime	// Time in seconds
 	uniform vec2 iResolution	// Viewport resolution
 	uniform vec4 iDate			// {year, month, day, time in seconds}
+	uniform sampler2D iFFT		// FFT data (256x1 texture, data is in the red channel)
 
 The fragment colour is output with the variable
 
