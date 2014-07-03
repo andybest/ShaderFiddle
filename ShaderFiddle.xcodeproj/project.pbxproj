@@ -1348,6 +1348,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShaderFiddle/ShaderFiddle-Prefix.pch";
 				INFOPLIST_FILE = "ShaderFiddle/ShaderFiddle-Info.plist";
@@ -1362,6 +1366,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShaderFiddle/ShaderFiddle-Prefix.pch";
 				INFOPLIST_FILE = "ShaderFiddle/ShaderFiddle-Info.plist";

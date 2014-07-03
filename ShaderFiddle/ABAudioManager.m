@@ -25,6 +25,7 @@
 {
     if ((self = [super init])) {
         [self setupFFT];
+        [self setupOnset];
     }
     return self;
 }
@@ -34,6 +35,7 @@
     free(A.realp);
     free(A.imagp);
     vDSP_destroy_fftsetup(fftSetup);
+    del_aubio_onset(o);
 }
 
 - (void)setupFFT
@@ -46,6 +48,13 @@
     A.imagp = (float *)malloc(nOver2 * sizeof(float));
 }
 
+- (void)setupOnset
+{
+    uint_t win_size = 512;
+    o = new_aubio_onset("normal", 512, win_size / 4, 44100);
+    onset = new_fvec(2);
+}
+
 - (void)startAudio
 {
     if (!_audioManager) {
@@ -54,10 +63,6 @@
 
     __weak typeof(self) weakSelf = self;
     [_audioManager setInputBlock:^(float *newAudio, UInt32 numSamples, UInt32 numChannels) {
-        // Now you're getting audio from the microphone every 20 milliseconds or so. How's that for easy?
-        // Audio comes in interleaved, so,
-        // if numChannels = 2, newAudio[0] is channel 1, newAudio[1] is channel 2, newAudio[2] is channel 1, etc.
-        //NSLog(@"Samples: %i", numSamples);
         
         float samples[512];
         float amplitudes[512];
@@ -69,18 +74,30 @@
             float leftSamp = newAudio[sampleIdx];
             float rightSamp = newAudio[sampleIdx + 1];
             
-            float outputSamp = leftSamp * 0.5 + rightSamp * 0.5;
-            samples[i] = leftSamp;
+            // Sum the stereo channels for the FFT
+            float outputSamp = (leftSamp + rightSamp) * 0.5;
+            samples[i] = outputSamp;
         }
         
         [weakSelf doFFT:samples amplitudes:amplitudes numSamples:512];
+        
+        // Sum FFT bins.
+        float summed[16];
+        
+        for(int i=0; i < 16; i++)
+            summed[i] = 0.0;
+        
+        for(int i=0; i < 256; i++)
+        {
+            int summedBin = (int)floor(i / 16.0);
+            summed[summedBin] += amplitudes[i];
+        }
         
         NSMutableArray *amps = [NSMutableArray array];
         for(int i=0; i < numSamples / 2; i++)
         {
             [amps addObject:@(amplitudes[i])];
         }
-        
         
         dispatch_async(dispatch_get_main_queue(), ^{
             NSNotificationCenter *center = [NSNotificationCenter defaultCenter];

@@ -44,12 +44,16 @@ typedef struct {
     GLuint shaderProgram;
     BOOL fftTextureCreated;
     GLuint fftTextureId;
+
+    NSTimeInterval lastFrameTime;
 }
 
 @property (nonatomic, strong) NSString *fragShader;
 @property (nonatomic, strong) ABShader *shader;
 @property (nonatomic, strong) NSDate *startDate;
 @property (weak) id<ABDisplayViewDelegate> delegate;
+@property (nonatomic, strong) NSTextField *fpsView;
+
 @property (nonatomic, strong) NSArray *fftData;
 
 - (CVReturn)getFrameForTime:(const CVTimeStamp *)outputTime;

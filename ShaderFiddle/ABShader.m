@@ -261,6 +261,8 @@
     [header appendString:@"uniform vec4 iDate;\n"];
     [header appendString:@"uniform vec4 iMouse;\n"];
     [header appendString:@"uniform sampler2D iFFT;\n"];
+    [header appendString:@"uniform float iOnset;\n"];
+    [header appendString:@"uniform float iGroupedFFT[16];\n"];
 
     return header;
 }
