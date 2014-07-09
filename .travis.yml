@@ -1,3 +1,4 @@
+before_install: travis_retry gem update cocoapods
 language: objective-c
 xcode_project: ShaderFiddle.xcodeproj # path to your xcodeproj folder
 xcode_scheme: ShaderFiddle
